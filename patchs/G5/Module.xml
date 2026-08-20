@@ -1,0 +1,1367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Modules>
+  <UNIT1>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT1>
+  <UNIT2>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT2>
+  <UNIT3>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT3>
+  <UNIT4>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT4>
+  <UNIT5>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT5>
+  <UNIT6>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT6>
+  <UNIT7>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT7>
+  <UNIT8>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT8>
+  <UNIT9>
+    <Type name="COMP" EfxNoOnMachine="23">G5_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="24">G5_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="25">G5_M_Comp</Type>
+    <Type name="OptComp" EfxNoOnMachine="135">G5_OptComp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="26">G5_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="27">G5_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="28">G5_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="29">G5_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="30">G5_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="31">G5_ParaEQ</Type>
+    <Type name="Exciter" EfxNoOnMachine="115">G5_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="32">G5_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="33">G5_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="34">G5_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="36">G5_Cry</Type>
+    <Type name="SlowFLTR" EfxNoOnMachine="119">G5_Slow_Filter</Type>
+    <Type name="M-Filter" EfxNoOnMachine="0">G5_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="35">G5_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">G5_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">G5_RndmFltr</Type>
+    <Type name="fCycle" EfxNoOnMachine="118">G5_F_Cycle</Type>
+    <Type name="Booster" EfxNoOnMachine="71">G5_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="72">G5_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="73">G5_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="74">G5_Governor</Type>
+    <Type name="Dist+" EfxNoOnMachine="75">G5_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="76">G5_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="77">G5_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="78">G5_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="79">G5_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="80">G5_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="81">G5_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="86">G5_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="87">G5_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="88">G5_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="89">G5_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="90">G5_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="91">G5_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="82">G5_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="83">G5_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="84">G5_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="85">G5_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="92">G5_FD_Combo</Type>
+    <Type modeling="1" name="DELUXE-R" EfxNoOnMachine="111">G5_DELUXE-R</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="104">G5_FD_Vibro</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="94">G5_US_Blues</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="93">G5_VX_Combo</Type>
+    <Type modeling="1" name="VX JMI" EfxNoOnMachine="141">G5_VX_JMI</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="95">G5_BG_Crunch</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="103">G5_Match_30</Type>
+    <Type modeling="1" name="CAR DRIVE" EfxNoOnMachine="114">G5_CAR_DRIVE</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="102">G5_TW_Rock</Type>
+    <Type modeling="1" name="TONE CITY" EfxNoOnMachine="108">G5_TONE_CITY</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="96">G5_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="97">G5_Tangerine</Type>
+    <Type modeling="1" name="B-BREAKER" EfxNoOnMachine="109">G5_B-BREAKER</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="98">G5_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS 1959" EfxNoOnMachine="140">G5_MS_1959</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="99">G5_MS_Drive</Type>
+    <Type modeling="1" name="BGN DRIVE" EfxNoOnMachine="110">G5_BGN_DRV</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="100">G5_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="101">G5_DZ_Drive</Type>
+    <Type modeling="1" name="ALIEN" EfxNoOnMachine="112">G5_ALIEN</Type>
+    <Type modeling="1" name="REVO-1" EfxNoOnMachine="113">G5_REVO-1</Type>
+    <Type name="Tremolo" EfxNoOnMachine="38">G5_Tremolo</Type>
+    <Type name="Duo Trem" EfxNoOnMachine="117">G5_Duo_Trem</Type>
+    <Type name="Slicer" EfxNoOnMachine="3">G5_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="39">G5_Phaser</Type>
+    <Type name="TheVibe" EfxNoOnMachine="1">G5_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="10">G5_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">G5_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="41">G5_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="42">G5_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="43">G5_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="44">G5_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="45">G5_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="46">G5_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="106">G5_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="47">G5_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="48">G5_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="37">G5_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="49">G5_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="51">G5_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="52">G5_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="50">G5_BendCho</Type>
+    <Type name="MojoRoller" EfxNoOnMachine="142">G5_MojoRoller</Type>
+    <Type name="RingMod" EfxNoOnMachine="40">G5_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="8">G5_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="9">G5_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="11">G5_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="2">G5_Z_Organ</Type>
+    <Type name="AutoPan" EfxNoOnMachine="116">G5_AutoPan</Type>
+    <Type name="Rt Closet" EfxNoOnMachine="123">G5_Roto_Closet</Type>
+    <Type name="Delay" EfxNoOnMachine="53">G5_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="54">G5_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="55">G5_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="56">G5_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="57">G5_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="58">G5_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="59">G5_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="5">G5_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="6">G5_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="7">G5_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="4">G5_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">G5_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="105">G5_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="60">G5_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="61">G5_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="62">G5_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="63">G5_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="64">G5_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="65">G5_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="66">G5_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="22">G5_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="19">G5_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="20">G5_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="16">G5_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="18">G5_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="17">G5_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="21">G5_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="67">G5_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="68">G5_PedalCry</Type>
+    <Type name="WAH 100" EfxNoOnMachine="122">G5_WAH_100</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="69">G5_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="70">G5_PdlMnPit</Type>
+    <Type name="None" EfxNoOnMachine="107" IsTHRU="1" IsDefaultEfx="1">G5_None</Type>
+    <Type name="VolBoostZ" EfxNoOnMachine="164" IsZPedalEfx="1">G5_VolBoostZ</Type>
+    <Type name="Rotary-Z" EfxNoOnMachine="160" IsZPedalEfx="1">G5_Rotary-Z</Type>
+    <Type name="Echo-Z" EfxNoOnMachine="161" IsZPedalEfx="1">G5_Echo-Z</Type>
+    <Type name="Flanger-Z" EfxNoOnMachine="162" IsZPedalEfx="1">G5_Flanger-Z</Type>
+    <Type name="Tremolo-Z" EfxNoOnMachine="163" IsZPedalEfx="1">G5_Tremolo-Z</Type>
+    <Type name="Filter-Z" EfxNoOnMachine="124" IsZPedalEfx="1">G5_Filter-Z</Type>
+    <Type name="TalkPDL-Z" EfxNoOnMachine="126" IsZPedalEfx="1">G5_TalkPDL-Z</Type>
+    <Type name="TRM&amp;PHSR" EfxNoOnMachine="154" IsZPedalEfx="1">G5_TRM&amp;PHSR</Type>
+    <Type name="CHO&amp;REV" EfxNoOnMachine="151" IsZPedalEfx="1">G5_CHO&amp;REV</Type>
+    <Type name="FLNG&amp;DLY" EfxNoOnMachine="152" IsZPedalEfx="1">G5_FLNG&amp;DLY</Type>
+    <Type name="OctPitch" EfxNoOnMachine="159" IsZPedalEfx="1">G5_OctPitch</Type>
+    <Type name="W-Shift" EfxNoOnMachine="149" IsZPedalEfx="1">G5_W-Shift</Type>
+    <Type name="HotSpice" EfxNoOnMachine="132" IsZPedalEfx="1">G5_HotSpice</Type>
+    <Type name="ChaosDLY" EfxNoOnMachine="150" IsZPedalEfx="1">G5_ChaosDLY</Type>
+    <Type name="StarShip" EfxNoOnMachine="147" IsZPedalEfx="1">G5_StarShip</Type>
+    <Type name="RNDM Talk" EfxNoOnMachine="127" IsZPedalEfx="1">G5_RNDM Talk</Type>
+    <Type name="FuzzyBack" EfxNoOnMachine="143" IsZPedalEfx="1">G5_FuzzyBack</Type>
+    <Type name="Granular" EfxNoOnMachine="158" IsZPedalEfx="1">G5_Granular</Type>
+    <Type name="SpaceWorm" EfxNoOnMachine="128" IsZPedalEfx="1">G5_SpaceWorm</Type>
+    <Type name="CUSTOM" EfxNoOnMachine="146" IsZPedalEfx="1" IsDefaultZPedalEfx="1">G5_CUSTOM</Type>
+    <Type name="ZP-None" EfxNoOnMachine="165" IsZPedalEfx="1">G5_ZP-None</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G5_Unknown</Type>
+  </UNIT9>
+  <FS>
+    <Type name="OFF">G5_FS_OFF</Type>
+    <Type name="UNIT1">G5_FS_UNIT1</Type>
+    <Type name="UNIT2">G5_FS_UNIT2</Type>
+    <Type name="UNIT3">G5_FS_UNIT3</Type>
+    <Type name="UNIT4">G5_FS_UNIT4</Type>
+    <Type name="UNIT5">G5_FS_UNIT5</Type>
+    <Type name="UNIT6">G5_FS_UNIT6</Type>
+    <Type name="UNIT7">G5_FS_UNIT7</Type>
+    <Type name="UNIT8">G5_FS_UNIT8</Type>
+    <Type name="UNIT9">G5_FS_UNIT9</Type>
+    <Type name="TAP TEMPO">G5_FS_TAP_TEMPO</Type>
+    <Type name="BYPAS-MUTE">G5_FS_BYPAS_MUTE</Type>
+  </FS>
+</Modules>

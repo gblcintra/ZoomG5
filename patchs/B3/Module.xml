@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Modules>
+  <UNIT1>
+    <Type name="OptComp" EfxNoOnMachine="67" IsDefaultEfx="1">B3_OptComp</Type>
+    <Type name="Dcomp" EfxNoOnMachine="16">B3_Dcomp</Type>
+    <Type name="M Comp" EfxNoOnMachine="17">B3_M_Comp</Type>
+    <Type name="DualComp" EfxNoOnMachine="68">B3_DualComp</Type>
+    <Type name="160 Comp" EfxNoOnMachine="69">B3_160_Comp</Type>
+    <Type name="Limiter" EfxNoOnMachine="70">B3_Limiter</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="18">B3_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="19">B3_ZNR</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="20">B3_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="21">B3_ParaEQ</Type>
+    <Type name="Splitter" EfxNoOnMachine="71">B3_Splitter</Type>
+    <Type name="Bottom B" EfxNoOnMachine="72">B3_Bottom_B</Type>
+    <Type name="Exciter" EfxNoOnMachine="73">B3_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="22">B3_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="23">B3_Autowah</Type>
+    <Type name="Z Tron" EfxNoOnMachine="24">B3_Z_Tron</Type>
+    <Type name="M-Filter" EfxNoOnMachine="1">B3_M_Filter</Type>
+    <Type name="A-Filter" EfxNoOnMachine="74">B3_A_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="26">B3_Cry</Type>
+    <Type name="Step" EfxNoOnMachine="25">B3_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">B3_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">B3_RndmFltr</Type>
+    <Type name="Booster" EfxNoOnMachine="76">B3_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="75">B3_OverDrive</Type>
+    <Type name="Bass Muff" EfxNoOnMachine="78">B3_Bass_Muff</Type>
+    <Type name="T Scream" EfxNoOnMachine="59">B3_T_SCREAM</Type>
+    <Type name="Dist 1" EfxNoOnMachine="60">B3_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="61">B3_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="62">B3_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="63">B3_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="64">B3_MetalWorld</Type>
+    <Type name="BassDrive" EfxNoOnMachine="79">B3_BassDrive</Type>
+    <Type name="D.I Plus" EfxNoOnMachine="80">B3_DI_Plus</Type>
+    <Type name="Bass BB" EfxNoOnMachine="77">B3_Bass_BB</Type>
+    <Type name="DI5" EfxNoOnMachine="81">B3_DI5</Type>
+    <Type name="Bass Pre" EfxNoOnMachine="82">B3_Bass_Pre</Type>
+    <Type name="AC Bs Pre" EfxNoOnMachine="83">B3_AC_Bs_Pre</Type>
+    <Type name="SVT" EfxNoOnMachine="84">B3_SVT</Type>
+    <Type name="B-Man" EfxNoOnMachine="85">B3_B_Man</Type>
+    <Type name="HRT3500" EfxNoOnMachine="86">B3_HRT3500</Type>
+    <Type name="SMR" EfxNoOnMachine="87">B3_SMR</Type>
+    <Type name="Flip Top" EfxNoOnMachine="88">B3_Flip_Top</Type>
+    <Type name="Acoustic" EfxNoOnMachine="89">B3_Acoustic</Type>
+    <Type name="Ag Amp" EfxNoOnMachine="90">B3_Ag_Amp</Type>
+    <Type name="Monotone" EfxNoOnMachine="91">B3_Monotone</Type>
+    <Type name="SuperB" EfxNoOnMachine="92">B3_SuperB</Type>
+    <Type name="G-Krueger" EfxNoOnMachine="93">B3_G_Krueger</Type>
+    <Type name="Heaven" EfxNoOnMachine="94">B3_Heaven</Type>
+    <Type name="Mark B" EfxNoOnMachine="95">B3_Mark_B</Type>
+    <Type name="Tremolo" EfxNoOnMachine="28">B3_Tremolo</Type>
+    <Type name="Slicer" EfxNoOnMachine="4">B3_Slicer</Type>
+    <Type name="4-Phaser" EfxNoOnMachine="96">B3_4_Phaser</Type>
+    <Type name="8-Phaser" EfxNoOnMachine="97">B3_8_Phaser</Type>
+    <Type name="The Vibe" EfxNoOnMachine="2">B3_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="11">B3_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">B3_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="30">B3_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="31">B3_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="32">B3_VintageCho</Type>
+    <Type name="ST-Chorus" EfxNoOnMachine="33">B3_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="34">B3_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="35">B3_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="66">B3_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="36">B3_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="37">B3_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="27">B3_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="38">B3_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="40">B3_MonoPitch</Type>
+    <Type name="H.P.S" EfxNoOnMachine="41">B3_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="39">B3_BendCho</Type>
+    <Type name="RingMod" EfxNoOnMachine="29">B3_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="9">B3_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="10">B3_Bomber</Type>
+    <Type name="MonoSyn" EfxNoOnMachine="98">B3_MonoSynth</Type>
+    <Type name="StdSyn" EfxNoOnMachine="99">B3_StdSynth</Type>
+    <Type name="SynTlk" EfxNoOnMachine="100">B3_SynthTlk</Type>
+    <Type name="V-Syn" EfxNoOnMachine="101">B3_V_Synth</Type>
+    <Type name="4VoiceSyn" EfxNoOnMachine="102">B3_4VoiceSynth</Type>
+    <Type name="Z-Syn" EfxNoOnMachine="103">B3_Z_Synth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="3">B3_Z_Organ</Type>
+    <Type name="Defret" EfxNoOnMachine="104">B3_Defret</Type>
+    <Type name="Delay" EfxNoOnMachine="42">B3_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="43">B3_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="44">B3_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="45">B3_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="46">B3_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="47">B3_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="48">B3_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="6">B3_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="7">B3_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="8">B3_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="5">B3_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">B3_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="65">B3_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="49">B3_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="50">B3_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="51">B3_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="52">B3_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="53">B3_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="54">B3_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="55">B3_Air</Type>
+    <Type name="Comp+Dist" EfxNoOnMachine="107">B3_Comp+Dist</Type>
+    <Type name="Oct+Dist" EfxNoOnMachine="108">B3_Oct+Dist</Type>
+    <Type name="Awah+Dist" EfxNoOnMachine="109">B3_Awah+Dist</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="110">B3_Comp+AWah</Type>
+    <Type name="PH+Dist" EfxNoOnMachine="111">B3_PH+Dist</Type>
+    <Type name="PedalVx" EfxNoOnMachine="56">B3_PedalVox</Type>
+    <Type name="PedalWah" EfxNoOnMachine="105">B3_PedalWah</Type>
+    <Type name="PedalReso" EfxNoOnMachine="106">B3_PedalReso</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="57">B3_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="58">B3_PdlMnPit</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">B3_Unknown</Type>
+  </UNIT1>
+  <UNIT2>
+    <Type name="OptComp" EfxNoOnMachine="67" IsDefaultEfx="1">B3_OptComp</Type>
+    <Type name="Dcomp" EfxNoOnMachine="16">B3_Dcomp</Type>
+    <Type name="M Comp" EfxNoOnMachine="17">B3_M_Comp</Type>
+    <Type name="DualComp" EfxNoOnMachine="68">B3_DualComp</Type>
+    <Type name="160 Comp" EfxNoOnMachine="69">B3_160_Comp</Type>
+    <Type name="Limiter" EfxNoOnMachine="70">B3_Limiter</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="18">B3_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="19">B3_ZNR</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="20">B3_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="21">B3_ParaEQ</Type>
+    <Type name="Splitter" EfxNoOnMachine="71">B3_Splitter</Type>
+    <Type name="Bottom B" EfxNoOnMachine="72">B3_Bottom_B</Type>
+    <Type name="Exciter" EfxNoOnMachine="73">B3_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="22">B3_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="23">B3_Autowah</Type>
+    <Type name="Z Tron" EfxNoOnMachine="24">B3_Z_Tron</Type>
+    <Type name="M-Filter" EfxNoOnMachine="1">B3_M_Filter</Type>
+    <Type name="A-Filter" EfxNoOnMachine="74">B3_A_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="26">B3_Cry</Type>
+    <Type name="Step" EfxNoOnMachine="25">B3_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">B3_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">B3_RndmFltr</Type>
+    <Type name="Booster" EfxNoOnMachine="76">B3_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="75">B3_OverDrive</Type>
+    <Type name="Bass Muff" EfxNoOnMachine="78">B3_Bass_Muff</Type>
+    <Type name="T Scream" EfxNoOnMachine="59">B3_T_SCREAM</Type>
+    <Type name="Dist 1" EfxNoOnMachine="60">B3_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="61">B3_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="62">B3_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="63">B3_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="64">B3_MetalWorld</Type>
+    <Type name="BassDrive" EfxNoOnMachine="79">B3_BassDrive</Type>
+    <Type name="D.I Plus" EfxNoOnMachine="80">B3_DI_Plus</Type>
+    <Type name="Bass BB" EfxNoOnMachine="77">B3_Bass_BB</Type>
+    <Type name="DI5" EfxNoOnMachine="81">B3_DI5</Type>
+    <Type name="Bass Pre" EfxNoOnMachine="82">B3_Bass_Pre</Type>
+    <Type name="AC Bs Pre" EfxNoOnMachine="83">B3_AC_Bs_Pre</Type>
+    <Type name="SVT" EfxNoOnMachine="84">B3_SVT</Type>
+    <Type name="B-Man" EfxNoOnMachine="85">B3_B_Man</Type>
+    <Type name="HRT3500" EfxNoOnMachine="86">B3_HRT3500</Type>
+    <Type name="SMR" EfxNoOnMachine="87">B3_SMR</Type>
+    <Type name="Flip Top" EfxNoOnMachine="88">B3_Flip_Top</Type>
+    <Type name="Acoustic" EfxNoOnMachine="89">B3_Acoustic</Type>
+    <Type name="Ag Amp" EfxNoOnMachine="90">B3_Ag_Amp</Type>
+    <Type name="Monotone" EfxNoOnMachine="91">B3_Monotone</Type>
+    <Type name="SuperB" EfxNoOnMachine="92">B3_SuperB</Type>
+    <Type name="G-Krueger" EfxNoOnMachine="93">B3_G_Krueger</Type>
+    <Type name="Heaven" EfxNoOnMachine="94">B3_Heaven</Type>
+    <Type name="Mark B" EfxNoOnMachine="95">B3_Mark_B</Type>
+    <Type name="Tremolo" EfxNoOnMachine="28">B3_Tremolo</Type>
+    <Type name="Slicer" EfxNoOnMachine="4">B3_Slicer</Type>
+    <Type name="4-Phaser" EfxNoOnMachine="96">B3_4_Phaser</Type>
+    <Type name="8-Phaser" EfxNoOnMachine="97">B3_8_Phaser</Type>
+    <Type name="The Vibe" EfxNoOnMachine="2">B3_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="11">B3_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">B3_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="30">B3_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="31">B3_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="32">B3_VintageCho</Type>
+    <Type name="ST-Chorus" EfxNoOnMachine="33">B3_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="34">B3_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="35">B3_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="66">B3_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="36">B3_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="37">B3_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="27">B3_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="38">B3_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="40">B3_MonoPitch</Type>
+    <Type name="H.P.S" EfxNoOnMachine="41">B3_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="39">B3_BendCho</Type>
+    <Type name="RingMod" EfxNoOnMachine="29">B3_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="9">B3_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="10">B3_Bomber</Type>
+    <Type name="MonoSyn" EfxNoOnMachine="98">B3_MonoSynth</Type>
+    <Type name="StdSyn" EfxNoOnMachine="99">B3_StdSynth</Type>
+    <Type name="SynTlk" EfxNoOnMachine="100">B3_SynthTlk</Type>
+    <Type name="V-Syn" EfxNoOnMachine="101">B3_V_Synth</Type>
+    <Type name="4VoiceSyn" EfxNoOnMachine="102">B3_4VoiceSynth</Type>
+    <Type name="Z-Syn" EfxNoOnMachine="103">B3_Z_Synth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="3">B3_Z_Organ</Type>
+    <Type name="Defret" EfxNoOnMachine="104">B3_Defret</Type>
+    <Type name="Delay" EfxNoOnMachine="42">B3_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="43">B3_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="44">B3_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="45">B3_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="46">B3_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="47">B3_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="48">B3_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="6">B3_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="7">B3_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="8">B3_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="5">B3_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">B3_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="65">B3_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="49">B3_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="50">B3_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="51">B3_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="52">B3_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="53">B3_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="54">B3_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="55">B3_Air</Type>
+    <Type name="Comp+Dist" EfxNoOnMachine="107">B3_Comp+Dist</Type>
+    <Type name="Oct+Dist" EfxNoOnMachine="108">B3_Oct+Dist</Type>
+    <Type name="Awah+Dist" EfxNoOnMachine="109">B3_Awah+Dist</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="110">B3_Comp+AWah</Type>
+    <Type name="PH+Dist" EfxNoOnMachine="111">B3_PH+Dist</Type>
+    <Type name="PedalVx" EfxNoOnMachine="56">B3_PedalVox</Type>
+    <Type name="PedalWah" EfxNoOnMachine="105">B3_PedalWah</Type>
+    <Type name="PedalReso" EfxNoOnMachine="106">B3_PedalReso</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="57">B3_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="58">B3_PdlMnPit</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">B3_Unknown</Type>
+  </UNIT2>
+  <UNIT3>
+    <Type name="OptComp" EfxNoOnMachine="67" IsDefaultEfx="1">B3_OptComp</Type>
+    <Type name="Dcomp" EfxNoOnMachine="16">B3_Dcomp</Type>
+    <Type name="M Comp" EfxNoOnMachine="17">B3_M_Comp</Type>
+    <Type name="DualComp" EfxNoOnMachine="68">B3_DualComp</Type>
+    <Type name="160 Comp" EfxNoOnMachine="69">B3_160_Comp</Type>
+    <Type name="Limiter" EfxNoOnMachine="70">B3_Limiter</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="18">B3_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="19">B3_ZNR</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="20">B3_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="21">B3_ParaEQ</Type>
+    <Type name="Splitter" EfxNoOnMachine="71">B3_Splitter</Type>
+    <Type name="Bottom B" EfxNoOnMachine="72">B3_Bottom_B</Type>
+    <Type name="Exciter" EfxNoOnMachine="73">B3_Exciter</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="22">B3_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="23">B3_Autowah</Type>
+    <Type name="Z Tron" EfxNoOnMachine="24">B3_Z_Tron</Type>
+    <Type name="M-Filter" EfxNoOnMachine="1">B3_M_Filter</Type>
+    <Type name="A-Filter" EfxNoOnMachine="74">B3_A_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="26">B3_Cry</Type>
+    <Type name="Step" EfxNoOnMachine="25">B3_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="12">B3_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="13">B3_RndmFltr</Type>
+    <Type name="Booster" EfxNoOnMachine="76">B3_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="75">B3_OverDrive</Type>
+    <Type name="Bass Muff" EfxNoOnMachine="78">B3_Bass_Muff</Type>
+    <Type name="T Scream" EfxNoOnMachine="59">B3_T_SCREAM</Type>
+    <Type name="Dist 1" EfxNoOnMachine="60">B3_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="61">B3_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="62">B3_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="63">B3_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="64">B3_MetalWorld</Type>
+    <Type name="BassDrive" EfxNoOnMachine="79">B3_BassDrive</Type>
+    <Type name="D.I Plus" EfxNoOnMachine="80">B3_DI_Plus</Type>
+    <Type name="Bass BB" EfxNoOnMachine="77">B3_Bass_BB</Type>
+    <Type name="DI5" EfxNoOnMachine="81">B3_DI5</Type>
+    <Type name="Bass Pre" EfxNoOnMachine="82">B3_Bass_Pre</Type>
+    <Type name="AC Bs Pre" EfxNoOnMachine="83">B3_AC_Bs_Pre</Type>
+    <Type name="SVT" EfxNoOnMachine="84">B3_SVT</Type>
+    <Type name="B-Man" EfxNoOnMachine="85">B3_B_Man</Type>
+    <Type name="HRT3500" EfxNoOnMachine="86">B3_HRT3500</Type>
+    <Type name="SMR" EfxNoOnMachine="87">B3_SMR</Type>
+    <Type name="Flip Top" EfxNoOnMachine="88">B3_Flip_Top</Type>
+    <Type name="Acoustic" EfxNoOnMachine="89">B3_Acoustic</Type>
+    <Type name="Ag Amp" EfxNoOnMachine="90">B3_Ag_Amp</Type>
+    <Type name="Monotone" EfxNoOnMachine="91">B3_Monotone</Type>
+    <Type name="SuperB" EfxNoOnMachine="92">B3_SuperB</Type>
+    <Type name="G-Krueger" EfxNoOnMachine="93">B3_G_Krueger</Type>
+    <Type name="Heaven" EfxNoOnMachine="94">B3_Heaven</Type>
+    <Type name="Mark B" EfxNoOnMachine="95">B3_Mark_B</Type>
+    <Type name="Tremolo" EfxNoOnMachine="28">B3_Tremolo</Type>
+    <Type name="Slicer" EfxNoOnMachine="4">B3_Slicer</Type>
+    <Type name="4-Phaser" EfxNoOnMachine="96">B3_4_Phaser</Type>
+    <Type name="8-Phaser" EfxNoOnMachine="97">B3_8_Phaser</Type>
+    <Type name="The Vibe" EfxNoOnMachine="2">B3_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="11">B3_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="14">B3_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="30">B3_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="31">B3_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="32">B3_VintageCho</Type>
+    <Type name="ST-Chorus" EfxNoOnMachine="33">B3_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="34">B3_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="35">B3_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="66">B3_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="36">B3_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="37">B3_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="27">B3_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="38">B3_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="40">B3_MonoPitch</Type>
+    <Type name="H.P.S" EfxNoOnMachine="41">B3_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="39">B3_BendCho</Type>
+    <Type name="RingMod" EfxNoOnMachine="29">B3_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="9">B3_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="10">B3_Bomber</Type>
+    <Type name="MonoSyn" EfxNoOnMachine="98">B3_MonoSynth</Type>
+    <Type name="StdSyn" EfxNoOnMachine="99">B3_StdSynth</Type>
+    <Type name="SynTlk" EfxNoOnMachine="100">B3_SynthTlk</Type>
+    <Type name="V-Syn" EfxNoOnMachine="101">B3_V_Synth</Type>
+    <Type name="4VoiceSyn" EfxNoOnMachine="102">B3_4VoiceSynth</Type>
+    <Type name="Z-Syn" EfxNoOnMachine="103">B3_Z_Synth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="3">B3_Z_Organ</Type>
+    <Type name="Defret" EfxNoOnMachine="104">B3_Defret</Type>
+    <Type name="Delay" EfxNoOnMachine="42">B3_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="43">B3_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="44">B3_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="45">B3_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="46">B3_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="47">B3_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="48">B3_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="6">B3_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="7">B3_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="8">B3_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="5">B3_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="15">B3_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="65">B3_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="49">B3_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="50">B3_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="51">B3_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="52">B3_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="53">B3_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="54">B3_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="55">B3_Air</Type>
+    <Type name="Comp+Dist" EfxNoOnMachine="107">B3_Comp+Dist</Type>
+    <Type name="Oct+Dist" EfxNoOnMachine="108">B3_Oct+Dist</Type>
+    <Type name="Awah+Dist" EfxNoOnMachine="109">B3_Awah+Dist</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="110">B3_Comp+AWah</Type>
+    <Type name="PH+Dist" EfxNoOnMachine="111">B3_PH+Dist</Type>
+    <Type name="PedalVx" EfxNoOnMachine="56">B3_PedalVox</Type>
+    <Type name="PedalWah" EfxNoOnMachine="105">B3_PedalWah</Type>
+    <Type name="PedalReso" EfxNoOnMachine="106">B3_PedalReso</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="57">B3_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="58">B3_PdlMnPit</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">B3_Unknown</Type>
+  </UNIT3>
+  <FS>
+    <Type name="OFF">B3_FS_OFF</Type>
+    <Type name="UNIT1">B3_FS_UNIT1</Type>
+    <Type name="UNIT2">B3_FS_UNIT2</Type>
+    <Type name="UNIT3">B3_FS_UNIT3</Type>
+    <Type name="TAP TEMPO">B3_FS_TAP_TEMPO</Type>
+    <Type name="BYPAS-MUTE">B3_FS_BYPAS_MUTE</Type>
+  </FS>
+  <FP>
+    <Type name="OFF">B3_FP_OFF</Type>
+    <Type name="UNIT1">B3_FP_UNIT1</Type>
+    <Type name="UNIT2">B3_FP_UNIT2</Type>
+    <Type name="UNIT3">B3_FP_UNIT3</Type>
+    <Type name="INPUT VOLUME">B3_FP_INPUT_VOLUME</Type>
+    <Type name="OUTPUT VOLUME">B3_FP_OUTPUT_VOLUME</Type>
+    <Type name="BALANCE">B3_FP_BAL</Type>
+  </FP>
+</Modules>

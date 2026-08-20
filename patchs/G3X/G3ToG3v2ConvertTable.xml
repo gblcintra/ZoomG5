@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Table>
+    <Element>0</Element> <!--Tyouseiyou-->
+    <Element>0</Element> <!--M-Filter-->
+    <Element>1</Element> <!--TheVibe-->
+    <Element>2</Element> <!--Z-Organ-->
+    <Element>3</Element> <!--Slicer-->
+    <Element>4</Element> <!--Pha_Dly-->
+    <Element>5</Element> <!--FilterDly-->
+    <Element>6</Element> <!--PitchDly-->
+    <Element>7</Element> <!--StereoDly-->
+    <Element>8</Element> <!--BitCrush-->
+    <Element>9</Element> <!--Bomber-->
+    <Element>10</Element> <!--DuoPhase-->
+    <Element>11</Element> <!--MonoSynth-->
+    <Element>12</Element> <!--SeqFltr-->
+    <Element>13</Element> <!--RndmFltr-->
+    <Element>14</Element> <!--WarpPhase-->
+    <Element>15</Element> <!--TrgHldDly-->
+    <Element>16</Element> <!--Cho+Dly-->
+    <Element>17</Element> <!--Cho+Rev-->
+    <Element>18</Element> <!--Dly+Rev-->
+    <Element>19</Element> <!--Comp+Phsr-->
+    <Element>20</Element> <!--Comp+AWah-->
+    <Element>21</Element> <!--V_Cho+Flg-->
+    <Element>22</Element> <!--Comp+OD-->
+    <Element>23</Element> <!--COMP-->
+    <Element>24</Element> <!--RackComp-->
+    <Element>25</Element> <!--M Comp-->
+    <Element>26</Element> <!--SlowATTCK-->
+    <Element>27</Element> <!--ZNR-->
+    <Element>28</Element> <!--NoiseGate-->
+    <Element>29</Element> <!--DirtyGate-->
+    <Element>30</Element> <!--GraphicEQ-->
+    <Element>31</Element> <!--ParaEQ-->
+    <Element>32</Element> <!--CombFLTR-->
+    <Element>33</Element> <!--AutoWah-->
+    <Element>34</Element> <!--Resonance-->
+    <Element>35</Element> <!--Step-->
+    <Element>36</Element> <!--Cry-->
+    <Element>37</Element> <!--Octave-->
+    <Element>38</Element> <!--Tremolo-->
+    <Element>39</Element> <!--Phaser-->
+    <Element>40</Element> <!--RingMod-->
+    <Element>41</Element> <!--Chorus-->
+    <Element>42</Element> <!--Detune-->
+    <Element>43</Element> <!--VintageCE-->
+    <Element>44</Element> <!--StereoCho-->
+    <Element>45</Element> <!--Ensemble-->
+    <Element>46</Element> <!--Vin Flanger-->
+    <Element>47</Element> <!--DynaFLNGR-->
+    <Element>48</Element> <!--Vibrato-->
+    <Element>49</Element> <!--PitchSHFT-->
+    <Element>50</Element> <!--BendCho-->
+    <Element>51</Element> <!--MonoPitch-->
+    <Element>52</Element> <!--HPS-->
+    <Element>53</Element> <!--Delay-->
+    <Element>54</Element> <!--TapeEcho-->
+    <Element>55</Element> <!--ModDelay-->
+    <Element>56</Element> <!--AnalogDLY-->
+    <Element>57</Element> <!--ReverseDL-->
+    <Element>58</Element> <!--MultiTapD-->
+    <Element>59</Element> <!--DynaDelay-->
+    <Element>60</Element> <!--Hall-->
+    <Element>61</Element> <!--Room-->
+    <Element>62</Element> <!--TiledRoom-->
+    <Element>63</Element> <!--Spring-->
+    <Element>64</Element> <!--Arena-->
+    <Element>65</Element> <!--EarlyRef-->
+    <Element>66</Element> <!--Air-->
+    <Element>67</Element> <!--PedalVox-->
+    <Element>68</Element> <!--PedalCry-->
+    <Element>69</Element> <!--PDL Pitch-->
+    <Element>70</Element> <!--PdlMnPit-->
+    <Element>71</Element> <!--Booster-->
+    <Element>72</Element> <!--OverDrive-->
+    <Element>73</Element> <!--T Scream-->
+    <Element>74</Element> <!--Governor-->
+    <Element>75</Element> <!--Dist +-->
+    <Element>76</Element> <!--Dist 1-->
+    <Element>77</Element> <!--Squeak-->
+    <Element>78</Element> <!--FuzzSmile-->
+    <Element>79</Element> <!--GreatMuff-->
+    <Element>80</Element> <!--MetalWRLD-->
+    <Element>81</Element> <!--HotBox-->
+    <Element>82</Element> <!--Z Wild-->
+    <Element>83</Element> <!--Lead-->
+    <Element>84</Element> <!--ExtremeDS-->
+    <Element>85</Element> <!--Aco.Sim-->
+    <Element>86</Element> <!--Z Clean-->
+    <Element>87</Element> <!--Z MP1-->
+    <Element>88</Element> <!--Z Bottom-->
+    <Element>89</Element> <!--Z Dream-->
+    <Element>90</Element> <!--Z Scream-->
+    <Element>91</Element> <!--Z Neos-->
+    <Element>0</Element> <!--Tyouseiyou-->
+    <Element>0</Element> <!--Tyouseiyou-->
+    <Element>0</Element> <!--Tyouseiyou-->
+    <Element>92</Element> <!--FD Combo-->
+    <Element>93</Element> <!--VX Combo-->
+    <Element>94</Element> <!--US Blues-->
+    <Element>95</Element> <!--BG Crunch-->
+    <Element>96</Element> <!--HW Stack-->
+    <Element>97</Element> <!--Trangerine-->
+    <Element>98</Element> <!--MS Crunch-->
+    <Element>99</Element> <!--MS Drive-->
+    <Element>100</Element> <!--BG Drive-->
+    <Element>101</Element> <!--DZ Drive-->
+    <Element>102</Element> <!--TW Rock-->
+    <Element>103</Element> <!--Match 30-->
+    <Element>104</Element> <!--FD Vibro-->
+    <Element>105</Element> <!--HD Reverb-->
+    <Element>106</Element> <!--Flanger-->
+</Table>

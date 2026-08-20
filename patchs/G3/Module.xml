@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Modules>
+  <UNIT1>
+    <Type name="COMP" EfxNoOnMachine="24" IsDefaultEfx="1">G3_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="25">G3_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="26">G3_M_Comp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="27">G3_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="28">G3_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="29">G3_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="30">G3_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="31">G3_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="32">G3_ParaEQ</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="33">G3_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="34">G3_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="35">G3_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="37">G3_Cry</Type>
+    <Type name="M-Filter" EfxNoOnMachine="1">G3_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="36">G3_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="13">G3_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="14">G3_RndmFltr</Type>
+    <Type name="Booster" EfxNoOnMachine="72">G3_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="73">G3_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="74">G3_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="75">G3_Governor</Type>
+    <Type name="Dist +" EfxNoOnMachine="76">G3_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="77">G3_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="78">G3_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="79">G3_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="80">G3_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="81">G3_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="82">G3_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="87">G3_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="88">G3_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="89">G3_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="90">G3_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="91">G3_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="92">G3_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="83">G3_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="84">G3_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="85">G3_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="86">G3_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="96">G3_FD_Combo</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="97">G3_VX_Combo</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="98">G3_US_Blues</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="99">G3_BG_Crunch</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="100">G3_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="101">G3_Tangerine</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="102">G3_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="103">G3_MS_Drive</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="104">G3_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="105">G3_DZ_Drive</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="106">G3_TW_Rock</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="107">G3_Match_30</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="108">G3_FD_Vibro</Type>
+    <Type name="Tremolo" EfxNoOnMachine="39">G3_Tremolo</Type>
+    <Type name="Slicer" EfxNoOnMachine="4">G3_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="40">G3_Phaser</Type>
+    <Type name="The Vibe" EfxNoOnMachine="2">G3_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="11">G3_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="15">G3_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="42">G3_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="43">G3_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="44">G3_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="45">G3_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="46">G3_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="47">G3_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="110">G3_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="48">G3_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="49">G3_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="38">G3_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="50">G3_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="52">G3_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="53">G3_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="51">G3_BendCho</Type>
+    <Type name="RingMod" EfxNoOnMachine="41">G3_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="9">G3_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="10">G3_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="12">G3_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="3">G3_Z_Organ</Type>
+    <Type name="Delay" EfxNoOnMachine="54">G3_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="55">G3_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="56">G3_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="57">G3_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="58">G3_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="59">G3_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="60">G3_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="6">G3_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="7">G3_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="8">G3_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="5">G3_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="16">G3_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="109">G3_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="61">G3_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="62">G3_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="63">G3_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="64">G3_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="65">G3_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="66">G3_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="67">G3_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="23">G3_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="20">G3_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="21">G3_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="17">G3_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="19">G3_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="18">G3_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="22">G3_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="68">G3_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="69">G3_PedalCry</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="70">G3_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="71">G3_PdlMnPit</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G3_Unknown</Type>
+  </UNIT1>
+  <UNIT2>
+    <Type name="COMP" EfxNoOnMachine="24" IsDefaultEfx="1">G3_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="25">G3_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="26">G3_M_Comp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="27">G3_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="28">G3_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="29">G3_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="30">G3_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="31">G3_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="32">G3_ParaEQ</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="33">G3_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="34">G3_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="35">G3_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="37">G3_Cry</Type>
+    <Type name="M-Filter" EfxNoOnMachine="1">G3_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="36">G3_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="13">G3_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="14">G3_RndmFltr</Type>
+    <Type name="Booster" EfxNoOnMachine="72">G3_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="73">G3_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="74">G3_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="75">G3_Governor</Type>
+    <Type name="Dist +" EfxNoOnMachine="76">G3_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="77">G3_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="78">G3_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="79">G3_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="80">G3_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="81">G3_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="82">G3_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="87">G3_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="88">G3_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="89">G3_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="90">G3_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="91">G3_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="92">G3_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="83">G3_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="84">G3_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="85">G3_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="86">G3_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="96">G3_FD_Combo</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="97">G3_VX_Combo</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="98">G3_US_Blues</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="99">G3_BG_Crunch</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="100">G3_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="101">G3_Tangerine</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="102">G3_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="103">G3_MS_Drive</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="104">G3_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="105">G3_DZ_Drive</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="106">G3_TW_Rock</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="107">G3_Match_30</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="108">G3_FD_Vibro</Type>
+    <Type name="Tremolo" EfxNoOnMachine="39">G3_Tremolo</Type>
+    <Type name="Slicer" EfxNoOnMachine="4">G3_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="40">G3_Phaser</Type>
+    <Type name="The Vibe" EfxNoOnMachine="2">G3_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="11">G3_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="15">G3_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="42">G3_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="43">G3_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="44">G3_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="45">G3_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="46">G3_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="47">G3_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="110">G3_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="48">G3_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="49">G3_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="38">G3_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="50">G3_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="52">G3_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="53">G3_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="51">G3_BendCho</Type>
+    <Type name="RingMod" EfxNoOnMachine="41">G3_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="9">G3_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="10">G3_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="12">G3_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="3">G3_Z_Organ</Type>
+    <Type name="Delay" EfxNoOnMachine="54">G3_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="55">G3_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="56">G3_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="57">G3_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="58">G3_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="59">G3_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="60">G3_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="6">G3_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="7">G3_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="8">G3_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="5">G3_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="16">G3_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="109">G3_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="61">G3_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="62">G3_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="63">G3_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="64">G3_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="65">G3_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="66">G3_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="67">G3_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="23">G3_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="20">G3_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="21">G3_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="17">G3_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="19">G3_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="18">G3_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="22">G3_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="68">G3_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="69">G3_PedalCry</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="70">G3_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="71">G3_PdlMnPit</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G3_Unknown</Type>
+  </UNIT2>
+  <UNIT3>
+    <Type name="COMP" EfxNoOnMachine="24" IsDefaultEfx="1">G3_Compressor</Type>
+    <Type name="RackComp" EfxNoOnMachine="25">G3_Rack_Comp</Type>
+    <Type name="M Comp" EfxNoOnMachine="26">G3_M_Comp</Type>
+    <Type name="SlowATTCK" EfxNoOnMachine="27">G3_SlowAttack</Type>
+    <Type name="ZNR" EfxNoOnMachine="28">G3_ZNR</Type>
+    <Type name="NoiseGate" EfxNoOnMachine="29">G3_NoiseGate</Type>
+    <Type name="DirtyGate" EfxNoOnMachine="30">G3_DirtyGate</Type>
+    <Type name="GraphicEQ" EfxNoOnMachine="31">G3_GraphicEQ</Type>
+    <Type name="ParaEQ" EfxNoOnMachine="32">G3_ParaEQ</Type>
+    <Type name="CombFLTR" EfxNoOnMachine="33">G3_CombFilter</Type>
+    <Type name="AutoWah" EfxNoOnMachine="34">G3_Autowah</Type>
+    <Type name="Resonance" EfxNoOnMachine="35">G3_Auto_Resonance_Filter</Type>
+    <Type name="Cry" EfxNoOnMachine="37">G3_Cry</Type>
+    <Type name="M-Filter" EfxNoOnMachine="1">G3_M_Filter</Type>
+    <Type name="Step" EfxNoOnMachine="36">G3_Step</Type>
+    <Type name="SeqFLTR" EfxNoOnMachine="13">G3_SeqFltr</Type>
+    <Type name="RndmFLTR" EfxNoOnMachine="14">G3_RndmFltr</Type>
+    <Type name="Booster" EfxNoOnMachine="72">G3_Booster</Type>
+    <Type name="OverDrive" EfxNoOnMachine="73">G3_OverDrive</Type>
+    <Type name="T Scream" EfxNoOnMachine="74">G3_T_SCREAM</Type>
+    <Type name="Governor" EfxNoOnMachine="75">G3_Governor</Type>
+    <Type name="Dist +" EfxNoOnMachine="76">G3_Dist+</Type>
+    <Type name="Dist 1" EfxNoOnMachine="77">G3_Dist1</Type>
+    <Type name="Squeak" EfxNoOnMachine="78">G3_SQUEAK</Type>
+    <Type name="FuzzSmile" EfxNoOnMachine="79">G3_FuzzSmile</Type>
+    <Type name="GreatMuff" EfxNoOnMachine="80">G3_GreatMuff</Type>
+    <Type name="MetalWRLD" EfxNoOnMachine="81">G3_MetalWorld</Type>
+    <Type name="HotBox" EfxNoOnMachine="82">G3_HotBox</Type>
+    <Type modeling="1" name="Z Clean" EfxNoOnMachine="87">G3_Z_CLEAN</Type>
+    <Type modeling="1" name="Z MP1" EfxNoOnMachine="88">G3_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom" EfxNoOnMachine="89">G3_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream" EfxNoOnMachine="90">G3_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream" EfxNoOnMachine="91">G3_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos" EfxNoOnMachine="92">G3_Z_NEOS</Type>
+    <Type modeling="1" name="Z Wild" EfxNoOnMachine="83">G3_Z_WILD</Type>
+    <Type modeling="1" name="Lead" EfxNoOnMachine="84">G3_Lead</Type>
+    <Type modeling="1" name="ExtremeDS" EfxNoOnMachine="85">G3_ExtremeDS</Type>
+    <Type name="Aco.Sim" EfxNoOnMachine="86">G3_AcoSim</Type>
+    <Type modeling="1" name="FD COMBO" EfxNoOnMachine="96">G3_FD_Combo</Type>
+    <Type modeling="1" name="VX COMBO" EfxNoOnMachine="97">G3_VX_Combo</Type>
+    <Type modeling="1" name="US BLUES" EfxNoOnMachine="98">G3_US_Blues</Type>
+    <Type modeling="1" name="BG CRUNCH" EfxNoOnMachine="99">G3_BG_Crunch</Type>
+    <Type modeling="1" name="HW STACK" EfxNoOnMachine="100">G3_HW_Stack</Type>
+    <Type modeling="1" name="TANGERINE" EfxNoOnMachine="101">G3_Tangerine</Type>
+    <Type modeling="1" name="MS CRUNCH" EfxNoOnMachine="102">G3_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS DRIVE" EfxNoOnMachine="103">G3_MS_Drive</Type>
+    <Type modeling="1" name="BG DRIVE" EfxNoOnMachine="104">G3_BG_Drive</Type>
+    <Type modeling="1" name="DZ DRIVE" EfxNoOnMachine="105">G3_DZ_Drive</Type>
+    <Type modeling="1" name="TW ROCK" EfxNoOnMachine="106">G3_TW_Rock</Type>
+    <Type modeling="1" name="MATCH 30" EfxNoOnMachine="107">G3_Match_30</Type>
+    <Type modeling="1" name="FD VIBRO" EfxNoOnMachine="108">G3_FD_Vibro</Type>
+    <Type name="Tremolo" EfxNoOnMachine="39">G3_Tremolo</Type>
+    <Type name="Slicer" EfxNoOnMachine="4">G3_Slicer</Type>
+    <Type name="Phaser" EfxNoOnMachine="40">G3_Phaser</Type>
+    <Type name="The Vibe" EfxNoOnMachine="2">G3_TheVibe</Type>
+    <Type name="DuoPhase" EfxNoOnMachine="11">G3_Duo_Phase</Type>
+    <Type name="WarpPhase" EfxNoOnMachine="15">G3_Warp_Phase</Type>
+    <Type name="Chorus" EfxNoOnMachine="42">G3_Chorus</Type>
+    <Type name="Detune" EfxNoOnMachine="43">G3_Detune</Type>
+    <Type name="VintageCE" EfxNoOnMachine="44">G3_VintageCho</Type>
+    <Type name="StereoCho" EfxNoOnMachine="45">G3_StereoCho</Type>
+    <Type name="Ensemble" EfxNoOnMachine="46">G3_Ensemble</Type>
+    <Type name="VinFLNGR" EfxNoOnMachine="47">G3_VinFlanger</Type>
+    <Type name="Flanger" EfxNoOnMachine="110">G3_Flanger</Type>
+    <Type name="DynaFLNGR" EfxNoOnMachine="48">G3_DynamicFLG</Type>
+    <Type name="Vibrato" EfxNoOnMachine="49">G3_Vibrato</Type>
+    <Type name="Octave" EfxNoOnMachine="38">G3_Octave</Type>
+    <Type name="PitchSHFT" EfxNoOnMachine="50">G3_PitchShift</Type>
+    <Type name="MonoPitch" EfxNoOnMachine="52">G3_MonoPitch</Type>
+    <Type name="HPS" EfxNoOnMachine="53">G3_HPS</Type>
+    <Type name="BendCho" EfxNoOnMachine="51">G3_BendCho</Type>
+    <Type name="RingMod" EfxNoOnMachine="41">G3_RingMod</Type>
+    <Type name="BitCrush" EfxNoOnMachine="9">G3_BitCrush</Type>
+    <Type name="Bomber" EfxNoOnMachine="10">G3_Bomber</Type>
+    <Type name="MonoSynth" EfxNoOnMachine="12">G3_MonoSynth</Type>
+    <Type name="Z-Organ" EfxNoOnMachine="3">G3_Z_Organ</Type>
+    <Type name="Delay" EfxNoOnMachine="54">G3_Delay</Type>
+    <Type name="TapeEcho" EfxNoOnMachine="55">G3_TapeEcho</Type>
+    <Type name="ModDelay" EfxNoOnMachine="56">G3_ModDelay</Type>
+    <Type name="AnalogDly" EfxNoOnMachine="57">G3_AnalogDelay</Type>
+    <Type name="ReverseDL" EfxNoOnMachine="58">G3_Reverse</Type>
+    <Type name="MultiTapD" EfxNoOnMachine="59">G3_MultiTapDL</Type>
+    <Type name="DynaDelay" EfxNoOnMachine="60">G3_DynamicDLY</Type>
+    <Type name="FilterDly" EfxNoOnMachine="6">G3_FilterDly</Type>
+    <Type name="PitchDly" EfxNoOnMachine="7">G3_PitchDly</Type>
+    <Type name="StereoDly" EfxNoOnMachine="8">G3_StereoDly</Type>
+    <Type name="PhaseDly" EfxNoOnMachine="5">G3_Pha_Dly</Type>
+    <Type name="TrgHldDly" EfxNoOnMachine="16">G3_TrgHldDly</Type>
+    <Type name="HD Reverb" EfxNoOnMachine="109">G3_HD_Reverb</Type>
+    <Type name="Hall" EfxNoOnMachine="61">G3_Hall</Type>
+    <Type name="Room" EfxNoOnMachine="62">G3_Room</Type>
+    <Type name="TiledRoom" EfxNoOnMachine="63">G3_TiledRoom</Type>
+    <Type name="Spring" EfxNoOnMachine="64">G3_Spring</Type>
+    <Type name="Arena" EfxNoOnMachine="65">G3_Arena</Type>
+    <Type name="EarlyRef" EfxNoOnMachine="66">G3_EarlyRef</Type>
+    <Type name="Air" EfxNoOnMachine="67">G3_Air</Type>
+    <Type name="Comp+OD" EfxNoOnMachine="23">G3_Comp+OD</Type>
+    <Type name="Comp+Phsr" EfxNoOnMachine="20">G3_Comp+Phsr</Type>
+    <Type name="Comp+AWah" EfxNoOnMachine="21">G3_Comp+AWah</Type>
+    <Type name="Cho+Dly" EfxNoOnMachine="17">G3_Cho+Dly</Type>
+    <Type name="Dly+Rev" EfxNoOnMachine="19">G3_Dly+Rev</Type>
+    <Type name="Cho+Rev" EfxNoOnMachine="18">G3_Cho+Rev</Type>
+    <Type name="FLG+VCho" EfxNoOnMachine="22">G3_V_Cho+Flg</Type>
+    <Type name="PedalVx" EfxNoOnMachine="68">G3_PedalVox</Type>
+    <Type name="PedalCry" EfxNoOnMachine="69">G3_PedalCry</Type>
+    <Type name="PDL Pitch" EfxNoOnMachine="70">G3_PedalPitch</Type>
+    <Type name="PDL MnPit" EfxNoOnMachine="71">G3_PdlMnPit</Type>
+    <Type name="Unknown" NotVisibleToTypeChg="1">G3_Unknown</Type>
+  </UNIT3>
+  <FS>
+    <Type name="OFF">G3_FS_OFF</Type>
+    <Type name="UNIT1">G3_FS_UNIT1</Type>
+    <Type name="UNIT2">G3_FS_UNIT2</Type>
+    <Type name="UNIT3">G3_FS_UNIT3</Type>
+    <Type name="TAP TEMPO">G3_FS_TAP_TEMPO</Type>
+    <Type name="BYPAS-MUTE">G3_FS_BYPAS_MUTE</Type>
+  </FS>
+  <FP>
+    <Type name="OFF">G3_FP_OFF</Type>
+    <Type name="UNIT1">G3_FP_UNIT1</Type>
+    <Type name="UNIT2">G3_FP_UNIT2</Type>
+    <Type name="UNIT3">G3_FP_UNIT3</Type>
+    <Type name="INPUT VOLUME">G3_FP_INPUT_VOLUME</Type>
+    <Type name="OUTPUT VOLUME">G3_FP_OUTPUT_VOLUME</Type>
+  </FP>
+</Modules>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Modules>
+  <COMP>
+    <Type name="COMP">G2_Compressor</Type>
+    <Type name="RackComp">G2_Rack_Comp</Type>
+    <Type name="M Comp">G2_M_Comp</Type>
+  </COMP>
+  <EFX>
+    <Type name="AutoWah">G2_Autowah</Type>
+    <Type name="Resonance">G2_Auto_Resonance_Filter</Type>
+    <Type name="Booster">G2_Booster</Type>
+    <Type name="Tremolo">G2_Tremolo</Type>
+    <Type name="RingMod">G2_RingMod</Type>
+    <Type name="SlowATTCK">G2_SlowAttack</Type>
+    <Type name="Octave">G2_Octave</Type>
+    <Type name="PedalVx">G2_PedalVox</Type>
+    <Type name="PedalCry">G2_PedalCry</Type>
+  </EFX>
+  <ZNR>
+    <Type name="ZNR">G2_ZNR</Type>
+    <Type name="NoiseGate">G2_NoiseGate</Type>
+    <Type name="DirtyGate">G2_DirtyGate</Type>
+  </ZNR>
+  <DRIVE>
+    <Type modeling="1" name="FD Combo">G2_FD_Combo</Type>
+    <Type modeling="1" name="VX Combo">G2_VX_Combo</Type>
+    <Type modeling="1" name="US Blues">G2_US_Blues</Type>
+    <Type modeling="1" name="BG Crunch">G2_BG_Crunch</Type>
+    <Type modeling="1" name="HW Stack">G2_HW_Stack</Type>
+    <Type modeling="1" name="MS Crunch">G2_MS_CRUNCH</Type>
+    <Type modeling="1" name="MS Drive">G2_MS_Drive</Type>
+    <Type modeling="1" name="PV Drive">G2_PV_Drive</Type>
+    <Type modeling="1" name="DZ Drive">G2_DZ_Drive</Type>
+    <Type modeling="1" name="BG Drive">G2_BG_Drive</Type>
+    <Type name="OverDrive">G2_OverDrive</Type>
+    <Type name="T Scream">G2_T_SCREAM</Type>
+    <Type name="Governor">G2_Governor</Type>
+    <Type name="Dist +">G2_Dist+</Type>
+    <Type name="Dist 1">G2_Dist1</Type>
+    <Type name="Squeak">G2_SQUEAK</Type>
+    <Type name="FuzzSmile">G2_FuzzSmile</Type>
+    <Type name="GreatMuff">G2_GreatMuff</Type>
+    <Type name="MetalWRLD">G2_MetalWorld</Type>
+    <Type name="HotBox">G2_HotBox</Type>
+    <Type modeling="1" name="Z Clean">G2_Z_CLEAN</Type>
+    <Type modeling="1" name="Z Wild">G2_Z_WILD</Type>
+    <Type modeling="1" name="Z MP1">G2_Z_MP1</Type>
+    <Type modeling="1" name="Z Bottom">G2_Z_BOTTOM</Type>
+    <Type modeling="1" name="Z Dream">G2_Z_DREAM</Type>
+    <Type modeling="1" name="Z Scream">G2_Z_SCREAM</Type>
+    <Type modeling="1" name="Z Neos">G2_Z_NEOS</Type>
+    <Type modeling="1" name="Lead">G2_Lead</Type>
+    <Type modeling="1" name="ExtremeDS">G2_ExtremeDS</Type>
+    <Type name="Aco.Sim">G2_AcoSim</Type>
+  </DRIVE>
+  <EQ>
+    <Type name="Equalizer">G2_EQ</Type>
+  </EQ>
+  <CAB>
+    <Type translucent="G2_MATCHED_t" name="MATCHED">G2_MATCHED</Type>
+    <Type translucent="G2_COMBO_t" name="COMBO">G2_COMBO</Type>
+    <Type translucent="G2_TWEED_t" name="TWEED">G2_TWEED</Type>
+    <Type translucent="G2_STACK_t" name="STACK">G2_STACK</Type>
+  </CAB>
+  <MOD>
+    <Type name="Chorus">G2_Chorus</Type>
+    <Type name="VintageCE">G2_VintageCho</Type>
+    <Type name="StereoCho">G2_StereoCho</Type>
+    <Type name="Ensemble">G2_Ensemble</Type>
+    <Type name="Phaser">G2_Phaser</Type>
+    <Type name="Flanger">G2_Flanger</Type>
+    <Type name="DynaFLNGR">G2_DynamicFLG</Type>
+    <Type name="Vibrato">G2_Vibrato</Type>
+    <Type name="Step">G2_Step</Type>
+    <Type name="Cry">G2_Cry</Type>
+    <Type name="Detune">G2_Detune</Type>
+    <Type name="PitchSHFT">G2_PitchShift</Type>
+    <Type name="MonoPitch">G2_MonoPitch</Type>
+    <Type name="HPS">G2_HPS</Type>
+    <Type name="PDL Pitch">G2_PedalPitch</Type>
+    <Type name="CombFLTR">G2_CombFilter</Type>
+    <Type name="Air">G2_Air</Type>
+    <Type name="Delay">G2_Delay1</Type>
+    <Type name="TapeEcho">G2_TapeEcho</Type>
+    <Type name="ModDelay">G2_ModDelay</Type>
+    <Type name="DynaDelay">G2_DynamicDLY</Type>
+  </MOD>
+  <DELAY>
+    <Type name="Delay">G2_Delay2</Type>
+    <Type name="Echo">G2_Echo</Type>
+    <Type name="AnalogDLY">G2_AnalogDelay</Type>
+    <Type name="PingPongD">G2_PingPongDelay</Type>
+    <Type name="ReverseDL">G2_Reverse</Type>
+  </DELAY>
+  <REVERB>
+    <Type name="Hall">G2_Hall</Type>
+    <Type name="Room">G2_Room</Type>
+    <Type name="Spring">G2_Spring</Type>
+    <Type name="Arena">G2_Arena</Type>
+    <Type name="TiledRoom">G2_TiledRoom</Type>
+    <Type name="EarlyRef">G2_EarlyRef</Type>
+    <Type name="MultiTapD">G2_MultiTapDL</Type>
+  </REVERB>
+  <FP>
+    <Type name="OFF">G2_FP_OFF</Type>
+    <Type name="VOLUME">G2_FP_VOLUME</Type>
+    <Type name="EFX">G2_FP_EFX</Type>
+    <Type name="DRIVE">G2_FP_DRIVE</Type>
+    <Type name="MOD">G2_FP_MOD</Type>
+    <Type name="DELAY">G2_FP_DELAY</Type>
+    <Type name="REVERB">G2_FP_REVERB</Type>
+  </FP>
+  <FS></FS>
+</Modules>
