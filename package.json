@@ -4,12 +4,15 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/extract_assets.mjs \"patchs\" --if-missing",
     "dev": "vite",
+    "prebuild": "node scripts/extract_assets.mjs \"patchs\" --if-missing",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "assets": "python scripts/extract_assets.py \"patchs\""
+    "assets": "node scripts/extract_assets.mjs \"patchs\""
   },
   "dependencies": {
+    "lucide-react": "^1.33.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
