@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Cable, Trash2, Send, Activity, ChevronRight, Bookmark, GitCompare, AlertCircle, Copy } from "lucide-react";
 import {
-  IDENTITY_REQUEST, currentPatchRequest, bankDumpRequest, isPatchDump,
+  IDENTITY_REQUEST, currentPatchRequest, paramEditEnable, isPatchDump,
   fromHex, guessZoomPort, listPorts, openMidi,
   parseIdentity, toHex, zoomModelOf, parseBinaryDump,
   analyzeModuleDiff, type MidiMessage,
@@ -220,11 +220,11 @@ export function MidiConsole() {
                 </motion.button>
                 <motion.button
                   className="go small"
-                  onClick={() => send(bankDumpRequest(model))}
+                  onClick={() => send(paramEditEnable(model))}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
-                  Ler banco inteiro
+                  Habilitar edição
                 </motion.button>
               </>
             )}

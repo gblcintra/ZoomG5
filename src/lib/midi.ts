@@ -1,22 +1,24 @@
 /**
  * midi.ts — Zoom G5 MIDI/SysEx helpers
  *
- * AVISO: os offsets dentro de cada slice de módulo (status em byte[12],
- * ID em byte[13]) foram observados empiricamente no patch 01B e ainda
- * precisam de verificação em outros patches via diffBytes/comparePatches.
- * Não altere offsets sem provar via comparação de dumps.
- *
  * Formato Zoom: F0 52 00 <modelo> <comando> <payload> F7
  *
- * Layout do payload (158 bytes, confirmado empiricamente):
- *   [0..1]    header  (2 bytes: [0]=patchNumber, [1]=desconhecido)
- *   [2..17]   módulo 0  (base = 2 + 0×16)
- *   [18..33]  módulo 1  (base = 2 + 1×16)
+ * Layout do payload (158 bytes, confirmado via dumps reais):
+ *   [0]       patchNumber
+ *   [1]       bypassMask  (bit N=1 → slot N ativo, bit N=0 → bypass; slots 0-7)
+ *   [2..17]   módulo 0   (base = 2 + 0×16) — header do efeito no slot 0
+ *   [18..33]  módulo 1   (base = 2 + 1×16) — parâmetros do slot 0
  *   ...
- *   [130..145] módulo 8 (base = 2 + 8×16)
- *   [146..155] nome do patch (10 bytes ASCII) — confirmado via dump real (DZ Bend)
- *   [156..157] 2 bytes trailing (padding/checksum?)
+ *   [130..145] módulo 8  (base = 2 + 8×16)
+ *   [146..155] nome do patch (10 bytes ASCII)
+ *   [156..157] 2 bytes trailing
  *   Total: 2 + 9×16 + 10 + 2 = 158 ✓
+ *
+ * Codificação dentro de cada módulo (confirmado para slot 0, NoiseGate / ZNR):
+ *   effectId  = mod[1] | mod[2]  (um dos dois é sempre 0; ver SYSEX_TO_CATALOG_ID)
+ *   parâmetros do efeito i → módulo i+1:
+ *     prmOffset=0 → posições 4, 5, 6…  (ascendente)
+ *     prmOffset=1 → posições 13, 12, 11… (descendente)
  */
 
 // ─── Protocolo SysEx Zoom ───────────────────────────────────────────────────
@@ -36,21 +38,12 @@ export function currentPatchRequest(model: number): number[] {
   return zoomSysex(model, 0x29);
 }
 
-export function bankDumpRequest(model: number): number[] {
+/** Habilita edição de parâmetros (necessário antes de editar parâmetros em tempo real). */
+export function paramEditEnable(model: number): number[] {
   return zoomSysex(model, 0x50);
 }
 
-/**
- * Verifica se a mensagem é um dump de patch da Zoom (cmd 0x28).
- * Devolve o payload (sem cabeçalho/F7) ou null.
- *
- * Formato: F0 52 00 5B 28 <payload 158 bytes> F7
- *
- * Dentro de cada bloco de 16 bytes (confirmado para NoiseGate no patch 01B):
- *   byte[12] = desconhecido (candidato a THRSH ou status)
- *   byte[13] = Effect ID
- *   byte[14] = hipótese on/bypass (confirmar via diffBytes)
- */
+/** Verifica se a mensagem é um dump de patch da Zoom (cmd 0x28). Devolve o payload ou null. */
 export function isPatchDump(bytes: number[]): number[] | null {
   if (
     bytes[0] === SYSEX_START &&
@@ -98,70 +91,25 @@ export function zoomModelOf(bytes: number[]): number | null {
   return null;
 }
 
-/**
- * Interpreta o payload de um dump de patch (cmd 0x28).
- *
- * ATENÇÃO: os offsets byte[12]=status e byte[13]=id dentro de cada slice
- * foram validados somente para o patch 01B. Use analyzeG5Dump e diffBytes
- * para validar antes de confiar nesses offsets em outros contextos.
- */
-/**
- * IMPORTANTE — correlação observada mas NÃO provada:
- *
- * Módulo NoiseGate capturado do patch 01B:
- *   byte[0]  = 0x0c    byte[8]  = 0x00
- *   byte[1]  = 0x00    byte[9]  = 0x00
- *   byte[2]  = 0x19    byte[10] = 0x00
- *   byte[3]  = 0x00    byte[11] = 0x00
- *   byte[4]  = 0x00    byte[12] = 0x09  ← byte12 (desconhecido)
- *   byte[5]  = 0x00    byte[13] = 0x1c  ← id=28=NoiseGate (confirmado)
- *   byte[6]  = 0x02    byte[14] = 0x00
- *   byte[7]  = 0x00    byte[15] = 0x00
- *
- * G5_NoiseGate.zrc informa: THRSH prm=2, init=9, max=24
- *
- * Correlações suspeitas (NÃO provadas):
- *   byte[6]  = 0x02  ↔  prm=2  → pode ser identificador do parâmetro
- *   byte[12] = 0x09  ↔  init=9 → pode ser o valor físico de THRSH
- *
- * prm=2 do .zrc NÃO é provado como offset físico. A fórmula mod[prm-2]
- * é hipótese — se fosse correta, THRSH estaria em mod[0]=0x0c, não 0x09.
- *
- * PRÓXIMO PASSO: diffBytes(dumpA_thrsh9, dumpB_thrsh10) → encontrar offset real.
- */
 export interface DumpSlot {
   slotIdx: number;
-  /** SysEx ID: (mod[1] | mod[2]) — confirmado via diff ZNR↔NoiseGate. */
+  /** SysEx ID = mod[1] | mod[2] (confirmado para slots 0; pendente para 1-8). */
   id: number;
-  /** ID do catálogo (Prm1) após tradução via SYSEX_TO_CATALOG_ID, ou o sysExId bruto. */
+  /** ID do catálogo após tradução via SYSEX_TO_CATALOG_ID. */
   catalogId: number;
-  /** true quando catalogId está no catálogo. */
   recognized: boolean;
-  /**
-   * byte[14] — HIPÓTESE: status ON/bypass (1=on, 0=bypass).
-   * Pendente confirmação via diffBytes(toggleOn, toggleOff).
-   * NÃO confiar sem diff.
-   */
+  /** Derivado de bypassMask (payload[1]) bit slotIdx; slot 8 usa id≠0 como proxy. */
   on: boolean;
-  /** byte[12] — significado DESCONHECIDO (candidato a THRSH ou status). */
+  /** mod[12] — significado desconhecido; mantido para análise futura. */
   byte12: number;
-  /**
-   * Valores de parâmetros: HIPÓTESE mod[prm-2].
-   * Pendente validação via diffBytes.
-   */
+  /** Valores dos parâmetros lidos do módulo i+1 (confirmado para slot 0). */
   values: number[];
   rawMod: number[];
 }
 
 /**
  * Interpreta o payload de um dump de patch (cmd 0x28).
- *
- * ATENÇÃO: offsets dentro dos módulos são HIPÓTESES, não confirmados
- * além do byte[13]=ID para NoiseGate no patch 01B.
- * Use o Diff Workbench para confirmar antes de confiar nos valores.
- *
- * Retorna TODOS os 9 slots — incluindo os não reconhecidos — para
- * que o UI possa mostrar o estado real do dump sem filtrar dados.
+ * Retorna todos os 9 slots, incluindo os não reconhecidos.
  */
 export function parseBinaryDump(
   payload: number[],
