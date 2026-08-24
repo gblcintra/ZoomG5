@@ -8,6 +8,7 @@ import {
   analyzeModuleDiff, type MidiMessage,
 } from "../lib/midi";
 import { BY_ID, CATEGORIES } from "../lib/catalog";
+import { PedalUnit } from "./PedalUnit";
 
 export function MidiConsole() {
   const [ports, setPorts] = useState<{ inputs: MIDIInput[]; outputs: MIDIOutput[] } | null>(null);
@@ -25,11 +26,11 @@ export function MidiConsole() {
   const [dumpA, setDumpA] = useState<{ payload: number[]; label: string } | null>(null);
   const [dumpB, setDumpB] = useState<{ payload: number[]; label: string } | null>(null);
 
-  const accessRef      = useRef<MIDIAccess | null>(null);
-  const bankRef        = useRef<number>(1);
-  const modelRef       = useRef<number | null>(null);
-  const outputIdRef    = useRef<string>("");
-  const pcGenRef       = useRef<number>(0);
+  const accessRef = useRef<MIDIAccess | null>(null);
+  const bankRef = useRef<number>(1);
+  const modelRef = useRef<number | null>(null);
+  const outputIdRef = useRef<string>("");
+  const pcGenRef = useRef<number>(0);
   const autoRefreshRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => { modelRef.current = model; }, [model]);
@@ -469,14 +470,14 @@ function DiffWorkbench({
 }
 
 function DiffRowView({ d }: { d: DiffRow }) {
-  const isInName  = d.offset >= 148;
-  const isExtra   = d.offset === 146 || d.offset === 147;
-  const modLabel  = d.moduleIndex != null
+  const isInName = d.offset >= 148;
+  const isExtra = d.offset === 146 || d.offset === 147;
+  const modLabel = d.moduleIndex != null
     ? `mod ${d.moduleIndex}`
     : (isInName ? "nome" : isExtra ? "extra" : "header");
-  const hyp       = d.moduleOffset != null ? (BYTE_HYPOTHESES[d.moduleOffset] ?? "") : "";
-  const delta     = d.a != null && d.b != null ? d.b - d.a : null;
-  const deltaStr  = delta == null ? "—" : delta > 0 ? `+${delta}` : String(delta);
+  const hyp = d.moduleOffset != null ? (BYTE_HYPOTHESES[d.moduleOffset] ?? "") : "";
+  const delta = d.a != null && d.b != null ? d.b - d.a : null;
+  const deltaStr = delta == null ? "—" : delta > 0 ? `+${delta}` : String(delta);
   const isKeyByte = d.moduleOffset === 1 || d.moduleOffset === 2 || d.moduleOffset === 12;
 
   return (
@@ -575,37 +576,53 @@ function PatchDumpView({ payload, rawSysEx, currentPatch }: {
               className="slot-row"
               style={{ opacity: s.id === 0 ? 0.35 : 1 }}
             >
-              {/* indicador on/off — byte[14], hipótese não confirmada */}
-              <span
-                className="slot-on"
-                style={{ background: dotColor }}
-                title={`byte[14]=${s.rawMod[14] ?? "?"} → ${s.on ? "ON" : "bypass"} (hipótese, não confirmado)`}
-              />
 
-              {/* número do slot */}
-              <span style={{ fontSize: 10, color: "#3d4d68", minWidth: 18, fontFamily: "monospace" }}>
-                {s.slotIdx}
-              </span>
-
+              {/* nome do efeito e parâmetros */}
               {fx && cat ? (
                 <>
-                  <span className="slot-cat" style={{ color: cat.color }}>{cat.label}</span>
-                  <strong className="slot-name" style={{ color: s.on ? "#dde4f0" : "#7d90b4" }}>
-                    {fx.name}
-                  </strong>
-                  <span className="slot-params">
-                    {fx.params.map((p, k) => (
-                      <span key={k} className="slot-param">
-                        {p.name}={s.values[k] ?? "?"}
+                  <div className="flex flex-col w-100 gap-1" style={{ flexGrow: 1, flexShrink: 1 }}>
+                    <div className="flex flex-row items-center gap-2">
+
+                      {/* indicador on/off — byte[14], hipótese não confirmada */}
+                      <span
+                        className="slot-on"
+                        style={{ background: dotColor }}
+                        title={`byte[14]=${s.rawMod[14] ?? "?"} → ${s.on ? "ON" : "bypass"} (hipótese, não confirmado)`}
+                      />
+
+                      {/* número do slot */}
+                      <span style={{ fontSize: 10, color: "#3d4d68", minWidth: 18, fontFamily: "monospace" }}>
+                        {s.slotIdx + 1}
                       </span>
-                    ))}
-                  </span>
+                      <span className="unit-idx">
+                        Slot {String(s.slotIdx + 1).padStart(2, "0")}
+                      </span>
+                      <span className="slot-cat" style={{ color: cat.color }}>{cat.label}</span>
+                      <strong className="slot-name" style={{ color: s.on ? "#dde4f0" : "#7d90b4" }}>
+                        {fx.name}
+                      </strong>
+                      <span className="slot-params">
+                        {fx.params.map((p, k) => (
+                          <span key={k} className="slot-param">
+                            {p.name}={s.values[k] ?? "?"}
+                          </span>
+                        ))}
+                      </span>
+                    </div>
+
+                    <PedalUnit
+                      slot={s}
+                      index={s.slotIdx}
+                      showHeader={false}
+                    />
+                  </div>
+
                 </>
               ) : (
                 <span style={{ fontSize: 11, color: "#3d4d68", fontFamily: "monospace" }}>
                   {s.id === 0
                     ? "(vazio)"
-                    : `sysex=0x${s.id.toString(16).padStart(2,"0")}=>${s.catalogId} — não mapeado`}
+                    : `sysex=0x${s.id.toString(16).padStart(2, "0")}=>${s.catalogId} — não mapeado`}
                 </span>
               )}
 
