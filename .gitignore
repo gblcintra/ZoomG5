@@ -3,3 +3,7 @@ dist
 .env
 .claude
 public/fx
+
+.env
+.env.*
+!.env.example

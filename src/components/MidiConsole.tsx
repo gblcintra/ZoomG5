@@ -42,23 +42,65 @@ export function MidiConsole() {
 
   async function connect() {
     setError(null);
+
     try {
       const access = await openMidi();
-      accessRef.current = access;
-      const p = listPorts(access);
-      setPorts(p);
-      const outId = guessZoomPort(p.outputs)?.id ?? p.outputs[0]?.id ?? "";
-      setInputId(guessZoomPort(p.inputs)?.id ?? p.inputs[0]?.id ?? "");
-      setOutputId(outId);
 
-      // Envia Identity Request automaticamente para detectar o modelo
-      // sem precisar que o usuário clique manualmente.
+      accessRef.current = access;
+
+      const p = listPorts(access);
+
+      setPorts(p);
+
+      const input =
+        guessZoomPort(p.inputs) ??
+        p.inputs[0];
+
+      const output =
+        guessZoomPort(p.outputs) ??
+        p.outputs[0];
+
+      if (!input) {
+        throw new Error(
+          "Nenhuma porta MIDI de entrada encontrada."
+        );
+      }
+
+      if (!output) {
+        throw new Error(
+          "Nenhuma porta MIDI de saída encontrada."
+        );
+      }
+
+      setInputId(input.id);
+      setOutputId(output.id);
+
+      console.log(
+        "[MIDI] INPUT:",
+        input.name,
+        input.id
+      );
+
+      console.log(
+        "[MIDI] OUTPUT:",
+        output.name,
+        output.id
+      );
+
+      // Identity primeiro.
       setTimeout(() => {
-        const out = access.outputs.get(outId);
-        if (out) out.send(IDENTITY_REQUEST);
-      }, 300);
+        console.log(
+          "[MIDI] → Identity Request"
+        );
+
+        output.send(IDENTITY_REQUEST);
+        push("out", IDENTITY_REQUEST);
+      }, 200);
+
     } catch (e) {
-      setError((e as Error).message);
+      setError(
+        (e as Error).message
+      );
     }
   }
 
@@ -73,16 +115,50 @@ export function MidiConsole() {
       push("in", bytes);
       const id = parseIdentity(bytes);
       if (id) {
-        setModel((prev) => {
-          if (prev === null) {
-            // Primeira detecção: lê o patch atual automaticamente
-            setTimeout(() => {
-              const out = accessRef.current?.outputs.get(outputIdRef.current);
-              if (out) out.send(currentPatchRequest(id.model));
-            }, 200);
-          }
-          return id.model;
-        });
+        console.log(
+          "[Zoom G5] Identity recebido:",
+          id
+        );
+
+        setModel(id.model);
+
+        const out =
+          accessRef.current?.outputs.get(
+            outputIdRef.current
+          );
+
+        if (out) {
+          const editorOn =
+            paramEditEnable(id.model);
+
+          console.log(
+            "[Zoom G5] → Editor Mode ON:",
+            toHex(editorOn)
+          );
+
+          out.send(editorOn);
+          push("out", editorOn);
+
+          setTimeout(() => {
+            const currentOut =
+              accessRef.current?.outputs.get(
+                outputIdRef.current
+              );
+
+            if (!currentOut) return;
+
+            const request =
+              currentPatchRequest(id.model);
+
+            console.log(
+              "[Zoom G5] → Current Patch:",
+              toHex(request)
+            );
+
+            currentOut.send(request);
+            push("out", request);
+          }, 300);
+        }
       } else {
         const m = zoomModelOf(bytes);
         if (m !== null) setModel((prev) => {
@@ -112,7 +188,8 @@ export function MidiConsole() {
       if (dump) {
         setPatchDump(dump);
         setPatchDumpRaw([...bytes]);
-      } else if (bytes[0] === 0xf0 && bytes[1] === 0x52 && !id) {
+      } 
+      else if (bytes[0] === 0xf0 && bytes[1] === 0x52 && !id) {
         // Qualquer outro SysEx da Zoom (parâmetro alterado, bypass toggled, etc.)
         // → re-solicita o dump com debounce para não floods.
         if (autoRefreshRef.current) clearTimeout(autoRefreshRef.current);
@@ -120,7 +197,7 @@ export function MidiConsole() {
           const m = modelRef.current;
           const out = accessRef.current?.outputs.get(outputIdRef.current);
           if (out && m !== null) out.send(currentPatchRequest(m));
-        }, 400);
+        }, 10);
       }
     };
     input.addEventListener("midimessage", onMessage);
