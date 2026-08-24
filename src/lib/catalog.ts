@@ -23,6 +23,13 @@ export interface Param {
   y: number;
   w: number;
   h: number;
+  /**
+   * Grupo de armazenamento SysEx no módulo de parâmetros (valor de <PrmOffset> no .zrc).
+   * 0 (default) → bloco ascendente  a partir de mod[4] (posição 4, 5, 6…)
+   * 1            → bloco descendente a partir de mod[13] (posição 13, 12, 11…)
+   * Ausente equivale a 0.
+   */
+  prmOffset?: number;
   /** legendas quando o parâmetro é uma chave (ex.: ["Slow","Fast"]) */
   values?: string[];
 }
