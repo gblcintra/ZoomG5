@@ -2,23 +2,21 @@
  * midi.ts — Zoom G5 MIDI/SysEx helpers
  *
  * Formato Zoom: F0 52 00 <modelo> <comando> <payload> F7
+ * Total message length = 164 bytes; payload = 158 bytes (slice 5..-1).
  *
- * Layout do payload (158 bytes, confirmado via dumps reais):
- *   [0]       patchNumber
- *   [1]       bypassMask  (bit N=1 → slot N ativo, bit N=0 → bypass; slots 0-7)
- *   [2..17]   módulo 0   (base = 2 + 0×16) — header do efeito no slot 0
- *   [18..33]  módulo 1   (base = 2 + 1×16) — parâmetros do slot 0
- *   ...
- *   [130..145] módulo 8  (base = 2 + 8×16)
- *   [146..155] nome do patch (10 bytes ASCII)
- *   [156..157] 2 bytes trailing
- *   Total: 2 + 9×16 + 10 + 2 = 158 ✓
+ * O payload é bit-packed (7-bit MIDI). Cada slot tem bytes espalhados em posições
+ * irregulares. Para o slot i:
  *
- * Codificação dentro de cada módulo (confirmado para slot 0, NoiseGate / ZNR):
- *   effectId  = mod[1] | mod[2]  (um dos dois é sempre 0; ver SYSEX_TO_CATALOG_ID)
- *   parâmetros do efeito i → módulo i+1:
- *     prmOffset=0 → posições 4, 5, 6…  (ascendente)
- *     prmOffset=1 → posições 13, 12, 11… (descendente)
+ *   effByte   = payload[EFF[i]]                         (LSB = on/off status)
+ *   extra     = (payload[EXTRA_BYTE[i]] & EXTRA_MASK[i]) << EXTRA_SHIFT[i]
+ *   bit8      = (payload[BIT8_BYTE[i]] & 0x01) << 7
+ *   effectId  = ((effByte & 0xFE) >> 1) + extra + bit8 - MINUS[i]
+ *
+ * Confirmado via `checkEffectEnabled()` do repositório MasusGit/ZoomMs50MidiController.
+ * Verificado para slot 0 / NoiseGate em dois dumps reais.
+ *
+ * Nome do patch: payload[146..155] (10 bytes ASCII). Confirmado.
+ * Parâmetros (Level, THRSH etc.): bit-packing ainda não decodificado.
  */
 
 // ─── Protocolo SysEx Zoom ───────────────────────────────────────────────────
@@ -93,19 +91,37 @@ export function zoomModelOf(bytes: number[]): number | null {
 
 export interface DumpSlot {
   slotIdx: number;
-  /** SysEx ID = mod[1] | mod[2] (confirmado para slots 0; pendente para 1-8). */
+  /** effectId calculado via fórmula bit-packed (confirmado para slot 0). Igual a catalogId. */
   id: number;
-  /** ID do catálogo após tradução via SYSEX_TO_CATALOG_ID. */
+  /** Mesmo que id — effectId já é o Prm1 do catálogo (não precisa de tradução). */
   catalogId: number;
   recognized: boolean;
-  /** Derivado de bypassMask (payload[1]) bit slotIdx; slot 8 usa id≠0 como proxy. */
+  /** LSB do effByte do slot (bit 0 = ativo, confirmado para slot 0). */
   on: boolean;
-  /** mod[12] — significado desconhecido; mantido para análise futura. */
+  /** @deprecated Mantido para compatibilidade; sem significado na nova decodificação. */
   byte12: number;
-  /** Valores dos parâmetros lidos do módulo i+1 (confirmado para slot 0). */
+  /** Zeros por enquanto — bit-packing de parâmetros ainda não decodificado. */
   values: number[];
+  /** 16 bytes ao redor do effByte do slot (para análise). */
   rawMod: number[];
 }
+
+// Offsets do effectId por slot — derivados de checkEffectEnabled() (MasusGit/ZoomMs50MidiController).
+// Fórmula: effectId = ((payload[eff] & 0xFE) >> 1) + ((payload[extraByte] & extraMask) << extraShift) + ((payload[bit8Byte] & 1) << 7) - minus
+// on/off: bit 0 de payload[eff].
+const SLOT_EFF: ReadonlyArray<{
+  eff: number; extraByte: number; extraMask: number; extraShift: number; bit8Byte: number; minus: number;
+}> = [
+  { eff: 1,   extraByte: 0,  extraMask: 0x40, extraShift: 0, bit8Byte: 2,   minus: 0  },
+  { eff: 14,  extraByte: 8,  extraMask: 0x02, extraShift: 5, bit8Byte: 15,  minus: 0  },
+  { eff: 28,  extraByte: 24, extraMask: 0x08, extraShift: 3, bit8Byte: 29,  minus: 0  },
+  { eff: 42,  extraByte: 40, extraMask: 0x20, extraShift: 1, bit8Byte: 43,  minus: 0  },
+  { eff: 55,  extraByte: 48, extraMask: 0x01, extraShift: 6, bit8Byte: 57,  minus: 0  },
+  { eff: 69,  extraByte: 64, extraMask: 0x04, extraShift: 4, bit8Byte: 70,  minus: 0  },
+  { eff: 83,  extraByte: 80, extraMask: 0x10, extraShift: 2, bit8Byte: 84,  minus: 0  },
+  { eff: 97,  extraByte: 96, extraMask: 0x40, extraShift: 0, bit8Byte: 98,  minus: 0  },
+  { eff: 110, extraByte: -1, extraMask: 0x00, extraShift: 0, bit8Byte: 111, minus: 60 },
+];
 
 /**
  * Interpreta o payload de um dump de patch (cmd 0x28).
@@ -120,11 +136,6 @@ export function parseBinaryDump(
   slots: DumpSlot[];
 } {
   const patchNumber = payload[0] ?? 0;
-  // CONFIRMADO via diff toggle-bypass (NoiseGate slot 0, patch DZ Bend):
-  //   ATIVO: payload[1]=0x39 (bit0=1), BYPASS: payload[1]=0x38 (bit0=0).
-  // Bit N=1 → slot N ativo; bit N=0 → slot N em bypass.
-  // Slots 0-7 confirmados por este byte. Slot 8: sem dado, usa id≠0 como proxy.
-  const bypassMask = payload[1] ?? 0;
 
   const name = payload
     .slice(146, 156)
@@ -135,56 +146,32 @@ export function parseBinaryDump(
   const slots: DumpSlot[] = [];
 
   for (let i = 0; i < 9; i++) {
-    const base = 2 + i * 16;          // header 2 bytes, módulos contíguos a partir do offset 2
-    const mod = payload.slice(base, base + 16);
+    const s = SLOT_EFF[i];
+    const effByte  = payload[s.eff] ?? 0;
+    const extra    = s.extraByte >= 0 ? ((payload[s.extraByte] ?? 0) & s.extraMask) << s.extraShift : 0;
+    const bit8     = ((payload[s.bit8Byte] ?? 0) & 0x01) << 7;
+    const id       = ((effByte & 0xFE) >> 1) + extra + bit8 - s.minus;
+    const on       = (effByte & 1) === 1;
 
-    const byte12 = mod[12] ?? 0;
-    // CONFIRMADO via diff ZNR ↔ NoiseGate (slot 1) e comparação entre patches 01B/DZBend:
-    //   effectId = mod[1] | mod[2]  (um dos dois é sempre 0, o outro é o ID real)
-    //   NoiseGate: mod[1]=0x00 mod[2]=0x19=25 → id=25
-    //   ZNR:       mod[1]=0x40=64 mod[2]=0x00 → id=64
-    // Estes IDs são o sistema interno do SysEx (diferente do Prm1 do catálogo).
-    // byte[13] no 01B (=0x1c=28) era parâmetro Level=28, NÃO o effect ID.
-    // PENDENTE: módulos 1..8 podem usar codificação diferente — confirmar com diffs.
-    const id     = (mod[1] ?? 0) | (mod[2] ?? 0);
-    // byte14 mantido para análise futura (relação com bypass não confirmada).
-    const byte14 = mod[14] ?? 0; void byte14;
-
-    const catalogId  = SYSEX_TO_CATALOG_ID[id] ?? id;
+    const catalogId  = id;
     const recognized = byId.has(catalogId);
     const fx = recognized ? byId.get(catalogId)! : null;
 
-    // CONFIRMADO para slot 0 (NoiseGate, DZ Bend):
-    //   Parâmetros do efeito no módulo i estão no módulo i+1 (nextMod).
-    //   prmOffset=0 → posições 4, 5, 6… (ascendente)
-    //   prmOffset=1 → posições 13, 12, 11… (descendente)
-    //   THRSH (prm=2, off=1) → nextMod[13]=10 ✓   Level (prm=3, off=0) → nextMod[4]=100 ✓
-    const nextBase = base + 16;
-    const nextMod = i < 8 ? payload.slice(nextBase, nextBase + 16) : [];
+    // Parâmetros: bit-packing ainda não decodificado. Retorna zeros para não quebrar a UI.
+    const values = fx ? fx.params.map(() => 0) : [];
 
-    const values = fx
-      ? (() => {
-          // Conta índice dentro de cada grupo (off=0 ascendente, off=1 descendente)
-          let j0 = 0, j1 = 0;
-          return fx.params.map((p) => {
-            const off = p.prmOffset ?? 0;
-            const byteIdx = off === 0 ? 4 + j0++ : 13 - j1++;
-            return byteIdx >= 0 && byteIdx < nextMod.length ? (nextMod[byteIdx] ?? 0) : 0;
-          });
-        })()
-      : [];
+    const rawStart = Math.max(0, s.eff - 1);
+    const rawMod   = payload.slice(rawStart, rawStart + 16);
 
     slots.push({
       slotIdx: i,
       id,
       catalogId,
       recognized,
-      // CONFIRMADO: bypassMask = payload[1], bit N = slot N (1=ativo, 0=bypass).
-      // Slot 8 não confirmado; usa id≠0 como fallback.
-      on: i < 8 ? ((bypassMask >> i) & 1) === 1 : id !== 0,
-      byte12,
+      on,
+      byte12: 0,
       values,
-      rawMod: [...mod],
+      rawMod,
     });
   }
 
@@ -214,17 +201,11 @@ export function guessZoomPort<T extends MIDIPort>(ports: T[]): T | undefined {
   return ports.find((p) => /zoom|g5/i.test(`${p.name ?? ""} ${p.manufacturer ?? ""}`));
 }
 
-// ─── Mapeamento SysEx ID → Prm1 do catálogo ────────────────────────────────
-// Os IDs no dump SysEx são diferentes dos Prm1 do catálogo (.zrc).
-// Tabela construída empiricamente via diffs (troca de efeito + comparação de dumps).
-// CONFIRMADOS:
-//   sysex=25 (0x19) → NoiseGate (Prm1=28)  — via diff ZNR↔NG em DZ Bend + 01B
-//   sysex=64 (0x40) → ZNR (Prm1=27)        — via dump ZNR em DZ Bend
-// PENDENTE: todos os outros efeitos precisam de diffs adicionais.
-export const SYSEX_TO_CATALOG_ID: Record<number, number> = {
-  25: 28,   // NoiseGate (mod1[2]=0x19, confirmado)
-  64: 27,   // ZNR       (mod1[1]=0x40, confirmado)
-};
+// O effectId calculado pela fórmula bit-packed é diretamente o Prm1 do catálogo.
+// A tabela SYSEX_TO_CATALOG_ID anterior estava baseada na fórmula errada (mod[1]|mod[2]).
+// Mantida aqui apenas para referência histórica; não é usada em parseBinaryDump.
+/** @deprecated Não usar — effectId já é o catalogId diretamente. */
+export const SYSEX_TO_CATALOG_ID: Record<number, number> = {};
 
 // ─── Tabela de efeitos da G5 (confirmada via G3ToG5ConvertTable.xml) ────────
 
