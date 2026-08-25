@@ -225,12 +225,12 @@ export interface DumpSlot {
   slotIdx: number;
 
   /**
-   * Effect ID real calculado pelo formato bit-packed.
+   * Effect Type calculado a partir da SysEx.
    */
   id: number;
 
   /**
-   * Mesmo ID usado para procurar o efeito no catálogo.
+   * ID usado para procurar no catálogo.
    */
   catalogId: number;
 
@@ -242,31 +242,42 @@ export interface DumpSlot {
   on: boolean;
 
   /**
-   * Byte 12 do módulo.
-   *
-   * Mantido para investigação.
+   * Byte 12 do módulo físico.
    */
   byte12: number;
 
   /**
-   * Valores atualmente exibidos no frontend.
-   *
-   * IMPORTANTE:
-   *
-   * Esses valores vêm do dump da G5.
+   * Valores dos parâmetros mostrados no front.
    */
   values: number[];
 
   /**
-   * Valores crus antes de qualquer conversão.
+   * Valores crus.
+   *
+   * -1 = ainda não descoberto.
    */
   rawValues: number[];
 
   /**
-   * 16 bytes reais do módulo.
+   * 16 bytes físicos do módulo.
    */
   rawMod: number[];
+
+  /**
+   * Offset absoluto do módulo no payload.
+   */
+  offset: number;
+
+  /**
+   * Alias dos bytes físicos.
+   */
+  moduleBytes: number[];
 }
+
+/**
+ * Compatibilidade com PedalUnit.
+ */
+export type Slot = DumpSlot;
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Effect ID
@@ -294,87 +305,146 @@ const SLOT_EFF: ReadonlyArray<{
   bit8Byte: number;
   minus: number;
 }> = [
-  {
-    eff: 1,
-    extraByte: 0,
-    extraMask: 0x40,
-    extraShift: 0,
-    bit8Byte: 2,
-    minus: 0,
-  },
+    {
+      eff: 1,
+      extraByte: 0,
+      extraMask: 0x40,
+      extraShift: 0,
+      bit8Byte: 2,
+      minus: 0,
+    },
 
-  {
-    eff: 14,
-    extraByte: 8,
-    extraMask: 0x02,
-    extraShift: 5,
-    bit8Byte: 15,
-    minus: 0,
-  },
+    {
+      eff: 14,
+      extraByte: 8,
+      extraMask: 0x02,
+      extraShift: 5,
+      bit8Byte: 15,
+      minus: 0,
+    },
 
-  {
-    eff: 28,
-    extraByte: 24,
-    extraMask: 0x08,
-    extraShift: 3,
-    bit8Byte: 29,
-    minus: 0,
-  },
+    {
+      eff: 28,
+      extraByte: 24,
+      extraMask: 0x08,
+      extraShift: 3,
+      bit8Byte: 29,
+      minus: 0,
+    },
 
-  {
-    eff: 42,
-    extraByte: 40,
-    extraMask: 0x20,
-    extraShift: 1,
-    bit8Byte: 43,
-    minus: 0,
-  },
+    {
+      eff: 42,
+      extraByte: 40,
+      extraMask: 0x20,
+      extraShift: 1,
+      bit8Byte: 43,
+      minus: 0,
+    },
 
-  {
-    eff: 55,
-    extraByte: 48,
-    extraMask: 0x01,
-    extraShift: 6,
-    bit8Byte: 57,
-    minus: 0,
-  },
+    {
+      eff: 55,
+      extraByte: 48,
+      extraMask: 0x01,
+      extraShift: 6,
+      bit8Byte: 57,
+      minus: 0,
+    },
 
-  {
-    eff: 69,
-    extraByte: 64,
-    extraMask: 0x04,
-    extraShift: 4,
-    bit8Byte: 70,
-    minus: 0,
-  },
+    {
+      eff: 69,
+      extraByte: 64,
+      extraMask: 0x04,
+      extraShift: 4,
+      bit8Byte: 70,
+      minus: 0,
+    },
 
-  {
-    eff: 83,
-    extraByte: 80,
-    extraMask: 0x10,
-    extraShift: 2,
-    bit8Byte: 84,
-    minus: 0,
-  },
+    {
+      eff: 83,
+      extraByte: 80,
+      extraMask: 0x10,
+      extraShift: 2,
+      bit8Byte: 84,
+      minus: 0,
+    },
 
-  {
-    eff: 97,
-    extraByte: 96,
-    extraMask: 0x40,
-    extraShift: 0,
-    bit8Byte: 98,
-    minus: 0,
-  },
+    {
+      eff: 97,
+      extraByte: 96,
+      extraMask: 0x40,
+      extraShift: 0,
+      bit8Byte: 98,
+      minus: 0,
+    },
 
-  {
-    eff: 110,
-    extraByte: -1,
-    extraMask: 0x00,
-    extraShift: 0,
-    bit8Byte: 111,
-    minus: 60,
-  },
-];
+    {
+      eff: 110,
+      extraByte: 123,
+      extraMask: 0x10,
+      extraShift: 3,
+      bit8Byte: 111,
+      minus: 0,
+    },
+  ];
+
+function calculateEffectId(
+  payload: number[],
+  slotIndex: number,
+): {
+  id: number;
+  on: boolean;
+  source: {
+    effByte: number;
+    bit8Byte: number;
+    extraByte: number;
+  };
+} {
+  const s = SLOT_EFF[slotIndex];
+
+  if (!s) {
+    return {
+      id: 0,
+      on: false,
+      source: {
+        effByte: -1,
+        bit8Byte: -1,
+        extraByte: -1,
+      },
+    };
+  }
+
+  const effByte = payload[s.eff] ?? 0;
+
+  const extra =
+    s.extraByte >= 0
+      ? ((payload[s.extraByte] ?? 0) & s.extraMask) << s.extraShift
+      : 0;
+
+  const bit8 =
+    ((payload[s.bit8Byte] ?? 0) & 0x01) << 7;
+
+  const base = (effByte & 0xFE) >> 1;
+
+  const id =
+    base +
+    extra +
+    bit8 -
+    s.minus;
+
+  return {
+    id,
+    on: (effByte & 0x01) !== 0,
+
+    source: {
+      effByte,
+      bit8Byte: payload[s.bit8Byte] ?? 0,
+      extraByte:
+        s.extraByte >= 0
+          ? payload[s.extraByte] ?? 0
+          : -1,
+    },
+  };
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Mapeamento dos parâmetros
@@ -560,6 +630,7 @@ export function parseBinaryDump(
       params: Array<{
         prm: number;
         prmOffset?: number;
+        max?: number;
       }>;
     }
   >,
@@ -568,14 +639,9 @@ export function parseBinaryDump(
   name: string;
   slots: DumpSlot[];
 } {
-  const patchNumber =
-    payload[0] ?? 0;
+  const patchNumber = payload[0] ?? 0;
 
-  /**
-   * Nome:
-   *
-   * payload[146..155]
-   */
+  // Nome do patch.
   const name = payload
     .slice(146, 156)
     .map((b) =>
@@ -588,91 +654,77 @@ export function parseBinaryDump(
 
   const slots: DumpSlot[] = [];
 
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < SLOT_EFF.length; i++) {
     const s = SLOT_EFF[i];
 
-    if (!s) {
-      break;
-    }
+    // ================================================================
+    // EFFECT TYPE
+    // ================================================================
 
-    // ─────────────────────────────────────
-    // Effect ID
-    // ─────────────────────────────────────
+    // const effByte = payload[s.eff] ?? 0;
 
-    const effByte =
-      payload[s.eff] ?? 0;
+    // const extra = s.extraByte >= 0
+    //   ? (
+    //     (payload[s.extraByte] ?? 0) &
+    //     s.extraMask
+    //   ) << s.extraShift
+    //   : 0;
 
-    const extra =
-      s.extraByte >= 0
-        ? (
-            (payload[s.extraByte] ?? 0) &
-            s.extraMask
-          ) << s.extraShift
-        : 0;
+    // const bit8 = ((payload[s.bit8Byte] ?? 0) & 0x01) << 7;
+    const effect = calculateEffectId(
+      payload,
+      i,
+    );
 
-    const bit8 =
-      (
-        (payload[s.bit8Byte] ?? 0) &
-        0x01
-      ) << 7;
+    // console.log(
+    //   "SLOT 9 EFFECT CALC",
+    //   calculateEffectId(payload, 8),
+    // );
 
-    const id =
-      ((effByte & 0xfe) >> 1) +
-      extra +
-      bit8 -
-      s.minus;
+    const id = effect.id;
+    const on = effect.on;
 
-    const on =
-      (effByte & 1) === 1;
+    // ================================================================
+    // MÓDULO PARA O FRONT / PARÂMETROS
+    // ================================================================
+    //
+    // Os módulos físicos são úteis para análise dos parâmetros,
+    // mas NÃO são usados para descobrir o Effect ID.
+    //
+    const moduleOffset =
+      2 + i * 16;
+
+    const rawMod = getModule(
+      payload,
+      i,
+    );
+
+    console.log("=== SLOT 9 STRUCTURE ===");
+
+    const slot9 = getModule(payload, 8);
+
+    console.table(
+      slot9.map((value, index) => ({
+        moduleByte: index,
+        payloadOffset: 130 + index,
+        hex: value.toString(16).padStart(2, "0"),
+        decimal: value,
+      })),
+    );
+
+    // ================================================================
+    // CATÁLOGO
+    // ================================================================
 
     const catalogId = id;
 
-    const recognized =
-      byId.has(catalogId);
+    const fx = byId.get(catalogId,);
 
-    const fx =
-      recognized
-        ? byId.get(catalogId)!
-        : null;
+    const recognized = !!fx;
 
-    // ─────────────────────────────────────
-    // Módulo real
-    // ─────────────────────────────────────
-
-    /**
-     * Layout confirmado:
-     *
-     * payload[0..1] = header
-     *
-     * módulo 0:
-     *   payload[2..17]
-     *
-     * módulo 1:
-     *   payload[18..33]
-     *
-     * ...
-     *
-     * módulo 8:
-     *   payload[130..145]
-     */
-    const moduleBase =
-      2 + i * 16;
-
-    const rawMod =
-      payload.slice(
-        moduleBase,
-        moduleBase + 16,
-      );
-
-    /**
-     * Byte 12 real do módulo.
-     */
-    const byte12 =
-      rawMod[12] ?? 0;
-
-    // ─────────────────────────────────────
-    // Parâmetros reais
-    // ─────────────────────────────────────
+    // ================================================================
+    // PARÂMETROS
+    // ================================================================
 
     let values: number[] = [];
     let rawValues: number[] = [];
@@ -692,46 +744,65 @@ export function parseBinaryDump(
         decoded.rawValues;
     }
 
-    // ─────────────────────────────────────
-    // Debug
-    // ─────────────────────────────────────
-
-    if (fx) {
-      console.debug(
-        `[G5] Slot ${i + 1} — ${catalogId}`,
-        {
-          effect: catalogId,
-          name: effectName(catalogId),
-          on,
-          rawMod: toHex(rawMod),
-          byte12,
-          values,
-          rawValues,
-        },
-      );
-    }
+    // ================================================================
+    // SLOT
+    // ================================================================
 
     slots.push({
       slotIdx: i,
 
+      // ID real calculado pela fórmula da G5.
       id,
 
+      // ID do catálogo.
       catalogId,
 
       recognized,
 
       on,
 
-      byte12,
+      // Byte 12 do bloco físico.
+      byte12:
+        rawMod[12] ?? 0,
 
       values,
 
       rawValues,
 
-      rawMod,
+      rawMod: [
+        ...rawMod,
+      ],
+
+      offset:
+        moduleOffset,
+
+      moduleBytes: [
+        ...rawMod,
+      ],
     });
   }
 
+  // ================================================================
+  // DEBUG
+  // ================================================================
+  console.log("=== SLOT 9 DEBUG ===");
+
+  console.log({
+    effectIdCalculado: slots[8]?.id,
+    on: slots[8]?.on,
+
+    payload110: payload[110],
+    payload111: payload[111],
+
+    slot9Modulo: getModule(payload, 8),
+
+    payload130_145: payload.slice(130, 146),
+  });
+
+  console.log(
+    "SLOT 9 HEX:",
+    toHex(payload.slice(130, 146)),
+  );
   return {
     patchNumber,
     name,
@@ -1180,7 +1251,6 @@ export function findNoiseGateModuleCandidates(
         Array.from(mod),
     });
   }
-
   return result;
 }
 
@@ -1448,15 +1518,15 @@ export function diffBytes(
         av == null
           ? null
           : av
-              .toString(16)
-              .padStart(2, "0"),
+            .toString(16)
+            .padStart(2, "0"),
 
       bHex:
         bv == null
           ? null
           : bv
-              .toString(16)
-              .padStart(2, "0"),
+            .toString(16)
+            .padStart(2, "0"),
     });
   }
 
@@ -1470,10 +1540,8 @@ export function formatDiff(
   return diffBytes(a, b)
     .map(
       (d) =>
-        `${d.offsetHex}: ${
-          d.aHex ?? "--"
-        } -> ${
-          d.bHex ?? "--"
+        `${d.offsetHex}: ${d.aHex ?? "--"
+        } -> ${d.bHex ?? "--"
         }`,
     )
     .join("\n");
@@ -1545,8 +1613,8 @@ export function analyzeModuleDiff(
           moduleOffset == null
             ? null
             : `0x${moduleOffset
-                .toString(16)
-                .padStart(2, "0")}`,
+              .toString(16)
+              .padStart(2, "0")}`,
       };
     });
 }
