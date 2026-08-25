@@ -655,7 +655,7 @@ export function parseBinaryDump(
   const slots: DumpSlot[] = [];
 
   for (let i = 0; i < SLOT_EFF.length; i++) {
-    const s = SLOT_EFF[i];
+    // const s = SLOT_EFF[i];
 
     // ================================================================
     // EFFECT TYPE
