@@ -26,7 +26,13 @@ um pedal que a G5 não tem.
 ```bash
 npm install
 cp .env.example .env        # coloque sua chave da Anthropic
+
+# Extrai as imagens dos pedais dos .zrc (uma vez, ou quando atualizar o Edit&Share)
 npm run assets "C:/Program Files (x86)/ZOOM/Edit&Share/<pasta de dados>/G5"
+
+# Gera o catálogo de efeitos a partir dos .zrc (uma vez, ou após atualizar assets)
+python scripts/build_catalog.py
+
 npm run dev
 ```
 
@@ -34,20 +40,36 @@ O passo `assets` extrai as imagens dos pedais dos `.zrc` da sua instalação par
 `public/fx/`. São ~5.100 PNGs, 13 MB. Elas não vêm no repositório: são material
 da Zoom, então cada um extrai da própria cópia do Edit&Share e usa localmente.
 
+O passo `build_catalog` lê `patchs/G5/Module.xml` e cada `G5_*.zrc`, extrai o
+`EfxType.xml` embutido em cada arquivo e gera `src/data/catalog.json` com todos
+os parâmetros, ranges e valores padrão de cada efeito. O arquivo gerado **não
+deve ser editado à mão** — é a fonte de verdade para o catálogo.
+
 O proxy do Vite injeta a chave no servidor, então ela nunca chega ao browser.
 
 ## Estrutura
 
 | Arquivo | O que faz |
 | --- | --- |
-| `src/lib/catalog.ts` | Tipos e catálogo dos 144 efeitos, com geometria da UI |
+| `src/lib/catalog.ts` | Tipos e catálogo dos 145 efeitos, com geometria da UI |
 | `src/lib/g5p.ts` | Leitura e escrita de `.g5p` e `.g5a` |
 | `src/lib/generate.ts` | Prompt, chamada da API e validação do retorno |
 | `src/lib/midi.ts` | Protocolo SysEx da G5: parse de dumps, diff de módulos, ferramentas de análise |
 | `src/components/PedalUnit.tsx` | Desenha o pedal com os sprites do Edit&Share |
 | `src/components/MidiConsole.tsx` | Console MIDI com dump ao vivo e diff workbench |
-| `scripts/extract_assets.py` | Extrai os PNGs dos `.zrc` |
-| `src/data/catalog.json` | Catálogo gerado (ID, knobs, faixas, posições) |
+| `scripts/extract_assets.py` | Extrai os PNGs dos `.zrc` para `public/fx/` |
+| `scripts/build_catalog.py` | Gera `src/data/catalog.json` a partir de `Module.xml` e `*.zrc` |
+| `src/data/catalog.json` | Catálogo gerado (ID, knobs, faixas, posições) — não editar à mão |
+| `patchs/G5/` | Arquivos `.zrc` e `Module.xml` do Edit&Share (fonte de verdade) |
+
+## Catálogo de efeitos
+
+O `catalog.json` é gerado automaticamente pelo script `build_catalog.py`:
+
+- **Fonte**: `patchs/G5/Module.xml` (IDs e nomes) + `patchs/G5/G5_*.zrc` (parâmetros)
+- **145 efeitos** em 11 categorias: AMP (28), MOD (26), FILTER (13), DELAY (12), DRIVE (15), DYN (8), REVERB (8), ZPEDAL (19), COMBO (7), PEDAL (6), SFX (3)
+- Para cada parâmetro: `name`, `max`, `init`, `type` (Knob/Toggle/Slider), `frames` e posição na UI
+- Para regenerar após instalar uma versão nova do Edit&Share: `python scripts/build_catalog.py`
 
 ## Console MIDI
 
@@ -95,15 +117,29 @@ O byte de modelo da G5 é revelado pela resposta ao Identity Request.
 [156..157] 2 bytes trailing
 ```
 
-### Codificação dentro de cada módulo (16 bytes)
+### Codificação do ID do efeito por slot
+
+O `effectId` de cada slot é bit-packed no payload. Para o slot `i`:
 
 ```
-mod[1] | mod[2]  = effectId SysEx  (um dos dois é sempre 0)
+effByte  = payload[EFF[i]]
+extra    = (payload[EXTRA_BYTE[i]] & EXTRA_MASK[i]) << EXTRA_SHIFT[i]
+bit8     = (payload[BIT8_BYTE[i]] & 0x01) << 7
+effectId = ((effByte & 0xFE) >> 1) + extra + bit8 - MINUS[i]
+on/off   = effByte & 0x01
 ```
+
+Confirmado para todos os 9 slots via `checkEffectEnabled()` do repositório
+MasusGit/ZoomMs50MidiController e verificado em dumps reais.
+
+### Codificação de parâmetros dentro de cada módulo (16 bytes)
 
 Os parâmetros do efeito no slot `i` ficam no **módulo `i+1`** (nextMod):
 - `prmOffset=0` → posições ascendentes: `nextMod[4]`, `nextMod[5]`, …
 - `prmOffset=1` → posições descendentes: `nextMod[13]`, `nextMod[12]`, …
+
+A decodificação completa dos valores dos parâmetros ainda está em andamento
+(bit-packing de 7 bits → valores de 8 bits, mapeamento por slot).
 
 ### IDs confirmados (SysEx → catálogo)
 
@@ -117,7 +153,8 @@ efeito na G5, capturar dois dumps e comparar.
 
 ## Próximos passos
 
-- Mapear os IDs SysEx dos demais 80+ efeitos via diffs.
+- Decodificar os valores de parâmetro do bit-packing do payload SysEx.
+- Mapear os IDs SysEx dos demais efeitos via Diff Workbench.
 - Fechar o SysEx de escrita de parâmetro para editar o edit buffer em tempo real.
 - Exportar banco `.g5a` inteiro em vez de patch a patch.
 - Mapear `Module9`–`Module11` para configurar o Z-Pedal pelo app.
