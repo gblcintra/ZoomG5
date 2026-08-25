@@ -188,7 +188,7 @@ export function MidiConsole() {
       if (dump) {
         setPatchDump(dump);
         setPatchDumpRaw([...bytes]);
-      } 
+      }
       else if (bytes[0] === 0xf0 && bytes[1] === 0x52 && !id) {
         // Qualquer outro SysEx da Zoom (parâmetro alterado, bypass toggled, etc.)
         // → re-solicita o dump com debounce para não floods.
@@ -483,10 +483,10 @@ export function MidiConsole() {
 type DiffRow = ReturnType<typeof analyzeModuleDiff>[number];
 
 const BYTE_HYPOTHESES: Record<number, string> = {
-  1: "byte[1] — Effect ID (hi, ex: ZNR=0x40)",
-  2: "byte[2] — Effect ID (lo, ex: NoiseGate=0x19)",
-  12: "byte[12] — THRSH (confirmado: init=9 em 01B, 13 em DZ Bend)",
-  13: "byte[13] — parâmetro (era confundido com Effect ID; é Level ou similar)",
+  1: "byte[1] — parte da codificação do Effect ID",
+  2: "byte[2] — parte da codificação do Effect ID",
+  12: "byte[12] — candidato a THRSH; default=9 corroborado pelo probing",
+  13: "byte[13] — candidato a parâmetro; encoding ainda não confirmado",
 };
 
 function DiffWorkbench({
@@ -555,7 +555,11 @@ function DiffRowView({ d }: { d: DiffRow }) {
   const hyp = d.moduleOffset != null ? (BYTE_HYPOTHESES[d.moduleOffset] ?? "") : "";
   const delta = d.a != null && d.b != null ? d.b - d.a : null;
   const deltaStr = delta == null ? "—" : delta > 0 ? `+${delta}` : String(delta);
-  const isKeyByte = d.moduleOffset === 1 || d.moduleOffset === 2 || d.moduleOffset === 12;
+  const isKeyByte =
+    d.moduleOffset === 1 ||
+    d.moduleOffset === 2 ||
+    d.moduleOffset === 12 ||
+    d.moduleOffset === 13;
 
   return (
     <tr style={{ background: isKeyByte ? "rgba(208,58,24,0.07)" : undefined }}>
@@ -704,8 +708,25 @@ function PatchDumpView({ payload, rawSysEx, currentPatch }: {
               )}
 
               {/* byte12 sempre visível para investigação */}
-              <span style={{ marginLeft: "auto", fontSize: 10, color: "#3d4d68", fontFamily: "monospace" }}>
-                b12=<code style={{ color: "#506080" }}>{s.byte12?.toString(16).padStart(2, "0")}</code>
+              <span
+                style={{
+                  marginLeft: "auto",
+                  fontSize: 10,
+                  color: "#3d4d68",
+                  fontFamily: "monospace",
+                }}
+              >
+                b12=
+                <code style={{ color: "#506080" }}>
+                  {s.rawMod[12]?.toString(16).padStart(2, "0") ?? "--"}
+                </code>
+
+                {"  "}
+
+                b13=
+                <code style={{ color: "#506080" }}>
+                  {s.rawMod[13]?.toString(16).padStart(2, "0") ?? "--"}
+                </code>
               </span>
             </li>
           );

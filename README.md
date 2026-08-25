@@ -161,6 +161,18 @@ A decodificação completa do bit-packing e do mapeamento de valores ainda preci
 
 É aqui que testes com hardware real podem fazer uma diferença enorme.
 
+### Referências da comunidade
+
+Este projeto se apoia em descobertas e ferramentas abertas da comunidade Zoom. Algumas referências úteis:
+
+- [ZoomPedalFun](https://github.com/shooking/ZoomPedalFun): coleção de scripts, notas e experimentos para várias pedaleiras Zoom, incluindo G5, G3n, G5n, B1 Four/G1 Four e MS-70CDR.
+- [ZoomPedalFun Wiki](https://github.com/shooking/ZoomPedalFun/wiki): páginas de engenharia reversa e formatos de patch, úteis para comparar hipóteses de protocolo.
+- [Mungewell zoom-zt2](https://github.com/mungewell/zoom-zt2): referência importante para formatos e ferramentas usadas nas gerações mais novas.
+- [Zoom MIDIDocs](https://github.com/zoom-dev/MIDIDocs): documentação comunitária de MIDI/SysEx para pedais Zoom.
+- [G200kg zoom-ms-utility](https://github.com/g200kg/zoom-ms-utility): utilitário e pesquisa para a família MultiStomp.
+
+Nem tudo dessas referências se aplica diretamente à G5 original. A G5 e a G5n, por exemplo, usam detalhes de protocolo diferentes. Por isso, comandos de outros projetos entram aqui como hipóteses a validar com dumps reais, não como verdades copiadas automaticamente.
+
 ## Como ajudar na engenharia reversa
 
 Se você tem uma Zoom G5 original, a contribuição mais útil é um par de dumps onde **só uma coisa mudou**.
@@ -307,6 +319,7 @@ No Windows, portas MIDI também podem ser exclusivas. Feche o ZOOM Edit&Share an
 - [ ] Escrita SysEx para edição do buffer de edição
 - [ ] Salvar/recuperar patches diretamente do hardware
 - [ ] Documentar completamente Module 9-11 / Z-Pedal / dados de footswitch
+- [ ] Validar comandos e padrões do ZoomPedalFun contra a G5 original
 
 ### Gerenciamento de patches
 
